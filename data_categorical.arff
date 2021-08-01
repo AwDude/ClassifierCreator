@@ -1,0 +1,1697 @@
+@RELATION data_categorical
+
+@ATTRIBUTE from_us {no,yes}
+@ATTRIBUTE gender {m,t,w}
+@ATTRIBUTE age INTEGER
+@ATTRIBUTE education {college,graduate,high_school,primary_school,undergraduate}
+@ATTRIBUTE occupation {disabled_or_retired,full_time,not_searching,part_time,searching,student}
+@ATTRIBUTE topic {drugs_and_alcohol,location,personal_identifiers,religion_and_politics,sex,strong_sentiment}
+@ATTRIBUTE severity {high,low}
+
+@DATA
+no,w,51,undergraduate,full_time,drugs_and_alcohol, high
+no,t,35,college,disabled_or_retired,drugs_and_alcohol, high
+no,m,38,college,full_time,drugs_and_alcohol, low
+no,m,45,undergraduate,full_time,drugs_and_alcohol, high
+no,w,39,graduate,full_time,drugs_and_alcohol, high
+no,m,34,graduate,full_time,drugs_and_alcohol, low
+no,m,33,high_school,full_time,drugs_and_alcohol, low
+no,m,39,graduate,full_time,drugs_and_alcohol, high
+no,m,23,graduate,student,drugs_and_alcohol, high
+no,m,31,undergraduate,full_time,drugs_and_alcohol, high
+no,m,28,graduate,full_time,drugs_and_alcohol, low
+no,m,27,college,student,drugs_and_alcohol, high
+no,m,27,graduate,full_time,drugs_and_alcohol, low
+no,m,36,graduate,full_time,drugs_and_alcohol, low
+no,m,40,graduate,full_time,drugs_and_alcohol, low
+no,w,27,graduate,full_time,drugs_and_alcohol, low
+no,m,31,graduate,full_time,drugs_and_alcohol, low
+no,w,28,graduate,full_time,drugs_and_alcohol, low
+no,m,32,undergraduate,full_time,drugs_and_alcohol, low
+no,m,40,undergraduate,full_time,drugs_and_alcohol, low
+no,m,29,graduate,full_time,drugs_and_alcohol, low
+no,w,28,graduate,full_time,drugs_and_alcohol, high
+no,w,22,high_school,student,drugs_and_alcohol, high
+no,w,33,graduate,full_time,drugs_and_alcohol, low
+no,w,33,graduate,full_time,drugs_and_alcohol, high
+no,w,26,undergraduate,student,drugs_and_alcohol, low
+no,m,33,graduate,full_time,drugs_and_alcohol, high
+no,m,26,graduate,full_time,drugs_and_alcohol, high
+no,m,33,graduate,part_time,drugs_and_alcohol, high
+no,w,27,high_school,full_time,drugs_and_alcohol, high
+no,m,28,graduate,full_time,drugs_and_alcohol, high
+no,w,25,high_school,student,drugs_and_alcohol, low
+no,m,29,graduate,full_time,drugs_and_alcohol, high
+no,m,26,undergraduate,student,drugs_and_alcohol, low
+no,m,46,graduate,student,drugs_and_alcohol, low
+no,m,26,graduate,part_time,drugs_and_alcohol, low
+no,m,37,graduate,full_time,drugs_and_alcohol, high
+no,m,58,undergraduate,full_time,drugs_and_alcohol, high
+no,w,23,undergraduate,student,drugs_and_alcohol, low
+no,w,32,graduate,searching,drugs_and_alcohol, high
+no,m,23,undergraduate,student,drugs_and_alcohol, low
+no,w,23,high_school,student,drugs_and_alcohol, high
+no,w,34,college,not_searching,drugs_and_alcohol, high
+no,w,45,graduate,full_time,drugs_and_alcohol, high
+no,w,25,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,33,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,46,college,part_time,drugs_and_alcohol, high
+yes,w,33,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,30,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,33,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,26,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,30,college,part_time,drugs_and_alcohol, high
+yes,m,28,high_school,full_time,drugs_and_alcohol, low
+yes,m,59,college,disabled_or_retired,drugs_and_alcohol, low
+yes,w,44,college,part_time,drugs_and_alcohol, low
+yes,m,36,college,part_time,drugs_and_alcohol, low
+yes,w,36,college,full_time,drugs_and_alcohol, low
+yes,w,31,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,29,college,full_time,drugs_and_alcohol, high
+yes,w,47,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,39,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,30,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,45,college,not_searching,drugs_and_alcohol, low
+yes,m,47,college,part_time,drugs_and_alcohol, high
+yes,m,29,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,35,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,34,undergraduate,not_searching,drugs_and_alcohol, low
+yes,m,35,high_school,full_time,drugs_and_alcohol, low
+yes,w,24,college,full_time,drugs_and_alcohol, high
+yes,w,26,graduate,full_time,drugs_and_alcohol, high
+yes,m,31,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,42,college,full_time,drugs_and_alcohol, low
+yes,m,35,college,not_searching,drugs_and_alcohol, high
+yes,m,48,college,full_time,drugs_and_alcohol, low
+yes,w,34,college,part_time,drugs_and_alcohol, high
+yes,m,51,graduate,part_time,drugs_and_alcohol, high
+yes,w,34,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,30,college,part_time,drugs_and_alcohol, low
+yes,w,27,graduate,full_time,drugs_and_alcohol, low
+yes,w,72,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,31,graduate,full_time,drugs_and_alcohol, high
+yes,w,46,college,full_time,drugs_and_alcohol, low
+yes,m,37,high_school,part_time,drugs_and_alcohol, high
+yes,m,33,college,full_time,drugs_and_alcohol, low
+yes,m,42,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,30,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,46,college,part_time,drugs_and_alcohol, low
+yes,m,27,college,part_time,drugs_and_alcohol, high
+yes,m,30,graduate,full_time,drugs_and_alcohol, low
+yes,w,43,college,part_time,drugs_and_alcohol, high
+yes,w,43,undergraduate,searching,drugs_and_alcohol, high
+yes,m,30,college,full_time,drugs_and_alcohol, high
+yes,m,37,graduate,full_time,drugs_and_alcohol, low
+yes,w,43,college,full_time,drugs_and_alcohol, low
+yes,w,44,college,part_time,drugs_and_alcohol, low
+yes,m,28,college,full_time,drugs_and_alcohol, low
+yes,w,37,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,66,high_school,full_time,drugs_and_alcohol, low
+yes,m,30,graduate,full_time,drugs_and_alcohol, low
+yes,w,38,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,41,college,full_time,drugs_and_alcohol, high
+yes,m,28,college,full_time,drugs_and_alcohol, high
+yes,m,30,undergraduate,student,drugs_and_alcohol, low
+yes,m,26,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,56,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,58,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,37,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,48,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,45,graduate,full_time,drugs_and_alcohol, high
+yes,w,29,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,32,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,33,undergraduate,full_time,drugs_and_alcohol, low
+yes,t,29,undergraduate,student,drugs_and_alcohol, low
+yes,m,41,college,part_time,drugs_and_alcohol, low
+yes,w,41,graduate,full_time,drugs_and_alcohol, low
+yes,m,35,high_school,full_time,drugs_and_alcohol, low
+yes,w,29,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,54,primary_school,full_time,drugs_and_alcohol, low
+yes,w,27,college,full_time,drugs_and_alcohol, high
+yes,m,61,college,full_time,drugs_and_alcohol, high
+yes,m,49,high_school,full_time,drugs_and_alcohol, low
+yes,m,25,primary_school,searching,drugs_and_alcohol, low
+yes,w,43,undergraduate,part_time,drugs_and_alcohol, high
+yes,w,55,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,44,college,not_searching,drugs_and_alcohol, low
+yes,m,35,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,40,college,full_time,drugs_and_alcohol, high
+yes,m,25,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,66,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,52,college,full_time,drugs_and_alcohol, low
+yes,m,31,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,31,college,full_time,drugs_and_alcohol, low
+yes,m,42,high_school,full_time,drugs_and_alcohol, high
+yes,w,28,high_school,part_time,drugs_and_alcohol, low
+yes,m,24,graduate,part_time,drugs_and_alcohol, low
+yes,w,53,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,34,college,full_time,drugs_and_alcohol, low
+yes,m,29,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,31,college,full_time,drugs_and_alcohol, low
+yes,m,37,high_school,full_time,drugs_and_alcohol, high
+yes,m,42,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,65,high_school,full_time,drugs_and_alcohol, high
+yes,m,23,high_school,full_time,drugs_and_alcohol, high
+yes,w,29,undergraduate,not_searching,drugs_and_alcohol, high
+yes,w,31,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,55,high_school,searching,drugs_and_alcohol, low
+yes,m,33,college,searching,drugs_and_alcohol, high
+yes,w,25,undergraduate,part_time,drugs_and_alcohol, low
+yes,m,63,undergraduate,disabled_or_retired,drugs_and_alcohol, high
+yes,m,43,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,37,college,not_searching,drugs_and_alcohol, high
+yes,m,32,college,full_time,drugs_and_alcohol, low
+yes,m,24,high_school,full_time,drugs_and_alcohol, low
+yes,m,25,college,full_time,drugs_and_alcohol, low
+yes,m,36,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,29,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,59,college,full_time,drugs_and_alcohol, high
+yes,m,41,college,full_time,drugs_and_alcohol, low
+yes,w,60,high_school,full_time,drugs_and_alcohol, low
+yes,m,32,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,37,high_school,not_searching,drugs_and_alcohol, high
+yes,w,35,college,not_searching,drugs_and_alcohol, high
+yes,m,39,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,33,graduate,full_time,drugs_and_alcohol, low
+yes,m,38,high_school,full_time,drugs_and_alcohol, low
+yes,m,40,college,full_time,drugs_and_alcohol, high
+yes,m,23,college,full_time,drugs_and_alcohol, low
+yes,w,52,graduate,full_time,drugs_and_alcohol, high
+yes,m,27,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,30,high_school,full_time,drugs_and_alcohol, low
+yes,m,47,high_school,full_time,drugs_and_alcohol, high
+yes,m,57,college,full_time,drugs_and_alcohol, high
+yes,w,50,college,full_time,drugs_and_alcohol, low
+yes,m,25,high_school,full_time,drugs_and_alcohol, high
+yes,w,50,college,part_time,drugs_and_alcohol, high
+yes,w,29,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,25,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,42,high_school,full_time,drugs_and_alcohol, high
+yes,m,53,high_school,full_time,drugs_and_alcohol, low
+yes,w,23,undergraduate,student,drugs_and_alcohol, low
+yes,m,33,college,full_time,drugs_and_alcohol, high
+yes,m,31,college,part_time,drugs_and_alcohol, high
+yes,w,54,college,full_time,drugs_and_alcohol, high
+yes,w,31,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,27,college,full_time,drugs_and_alcohol, high
+yes,m,51,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,30,college,full_time,drugs_and_alcohol, high
+yes,w,35,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,33,graduate,part_time,drugs_and_alcohol, high
+yes,m,39,college,disabled_or_retired,drugs_and_alcohol, high
+yes,m,39,high_school,full_time,drugs_and_alcohol, high
+yes,w,37,undergraduate,part_time,drugs_and_alcohol, high
+yes,w,28,high_school,not_searching,drugs_and_alcohol, low
+yes,w,59,college,part_time,drugs_and_alcohol, high
+yes,m,24,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,35,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,38,high_school,full_time,drugs_and_alcohol, low
+yes,m,33,college,full_time,drugs_and_alcohol, low
+yes,m,30,college,full_time,drugs_and_alcohol, low
+yes,m,45,college,full_time,drugs_and_alcohol, high
+yes,w,33,undergraduate,not_searching,drugs_and_alcohol, low
+yes,w,32,high_school,full_time,drugs_and_alcohol, high
+yes,w,42,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,32,college,full_time,drugs_and_alcohol, high
+yes,m,43,high_school,full_time,drugs_and_alcohol, low
+yes,w,23,college,searching,drugs_and_alcohol, low
+yes,w,59,college,full_time,drugs_and_alcohol, high
+yes,w,27,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,23,college,student,drugs_and_alcohol, low
+yes,m,54,high_school,full_time,drugs_and_alcohol, low
+yes,m,36,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,30,high_school,full_time,drugs_and_alcohol, low
+yes,m,29,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,28,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,33,college,disabled_or_retired,drugs_and_alcohol, low
+yes,m,31,college,full_time,drugs_and_alcohol, low
+yes,m,25,college,part_time,drugs_and_alcohol, low
+yes,m,33,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,37,high_school,full_time,drugs_and_alcohol, low
+yes,w,50,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,24,college,full_time,drugs_and_alcohol, low
+yes,m,29,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,35,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,32,college,full_time,drugs_and_alcohol, low
+yes,m,24,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,29,high_school,full_time,drugs_and_alcohol, low
+yes,w,36,college,full_time,drugs_and_alcohol, low
+yes,w,27,college,part_time,drugs_and_alcohol, high
+yes,w,25,college,part_time,drugs_and_alcohol, high
+yes,m,54,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,35,graduate,part_time,drugs_and_alcohol, low
+yes,w,61,college,full_time,drugs_and_alcohol, low
+yes,w,41,graduate,full_time,drugs_and_alcohol, low
+yes,m,34,high_school,part_time,drugs_and_alcohol, high
+yes,w,33,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,35,college,full_time,drugs_and_alcohol, low
+yes,w,45,college,part_time,drugs_and_alcohol, high
+yes,m,41,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,45,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,32,high_school,full_time,drugs_and_alcohol, low
+yes,w,23,undergraduate,full_time,drugs_and_alcohol, high
+yes,w,31,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,33,graduate,searching,drugs_and_alcohol, high
+yes,m,25,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,43,college,full_time,drugs_and_alcohol, high
+yes,m,34,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,41,college,full_time,drugs_and_alcohol, low
+yes,w,26,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,27,high_school,full_time,drugs_and_alcohol, high
+yes,w,53,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,35,high_school,searching,drugs_and_alcohol, low
+yes,w,32,high_school,full_time,drugs_and_alcohol, low
+yes,m,38,college,full_time,drugs_and_alcohol, low
+yes,w,38,college,part_time,drugs_and_alcohol, low
+yes,w,46,primary_school,disabled_or_retired,drugs_and_alcohol, low
+yes,m,36,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,51,college,full_time,drugs_and_alcohol, low
+yes,m,56,graduate,full_time,drugs_and_alcohol, high
+yes,m,32,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,35,graduate,full_time,drugs_and_alcohol, low
+yes,m,29,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,35,college,full_time,drugs_and_alcohol, low
+yes,w,18,undergraduate,part_time,drugs_and_alcohol, low
+yes,m,30,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,32,high_school,full_time,drugs_and_alcohol, low
+yes,m,68,high_school,not_searching,drugs_and_alcohol, high
+yes,m,35,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,29,graduate,full_time,drugs_and_alcohol, low
+yes,m,43,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,51,college,not_searching,drugs_and_alcohol, high
+yes,m,27,college,full_time,drugs_and_alcohol, high
+yes,w,31,undergraduate,full_time,drugs_and_alcohol, low
+yes,m,52,high_school,full_time,drugs_and_alcohol, low
+yes,w,59,undergraduate,full_time,drugs_and_alcohol, high
+yes,m,63,undergraduate,disabled_or_retired,drugs_and_alcohol, low
+yes,m,36,college,full_time,drugs_and_alcohol, low
+yes,w,30,undergraduate,full_time,drugs_and_alcohol, low
+yes,w,31,college,full_time,drugs_and_alcohol, high
+yes,m,32,college,full_time,drugs_and_alcohol, low
+yes,w,42,undergraduate,part_time,drugs_and_alcohol, low
+yes,w,34,undergraduate,full_time,drugs_and_alcohol, high
+no,w,51,undergraduate,full_time,sex, high
+no,t,35,college,disabled_or_retired,sex, high
+no,m,38,college,full_time,sex, high
+no,m,45,undergraduate,full_time,sex, high
+no,w,39,graduate,full_time,sex, high
+no,m,34,graduate,full_time,sex, high
+no,m,33,high_school,full_time,sex, high
+no,m,39,graduate,full_time,sex, high
+no,m,23,graduate,student,sex, high
+no,m,31,undergraduate,full_time,sex, high
+no,m,28,graduate,full_time,sex, high
+no,m,27,college,student,sex, high
+no,m,27,graduate,full_time,sex, high
+no,m,36,graduate,full_time,sex, high
+no,m,40,graduate,full_time,sex, high
+no,w,27,graduate,full_time,sex, low
+no,m,31,graduate,full_time,sex, high
+no,w,28,graduate,full_time,sex, high
+no,m,32,undergraduate,full_time,sex, low
+no,m,40,undergraduate,full_time,sex, high
+no,m,29,graduate,full_time,sex, low
+no,w,28,graduate,full_time,sex, high
+no,w,22,high_school,student,sex, high
+no,w,33,graduate,full_time,sex, high
+no,w,33,graduate,full_time,sex, high
+no,w,26,undergraduate,student,sex, low
+no,m,33,graduate,full_time,sex, high
+no,m,26,graduate,full_time,sex, high
+no,m,33,graduate,part_time,sex, low
+no,w,27,high_school,full_time,sex, high
+no,m,28,graduate,full_time,sex, low
+no,w,25,high_school,student,sex, low
+no,m,29,graduate,full_time,sex, high
+no,m,26,undergraduate,student,sex, high
+no,m,46,graduate,student,sex, low
+no,m,26,graduate,part_time,sex, low
+no,m,37,graduate,full_time,sex, high
+no,m,58,undergraduate,full_time,sex, high
+no,w,23,undergraduate,student,sex, high
+no,w,32,graduate,searching,sex, high
+no,m,23,undergraduate,student,sex, high
+no,w,23,high_school,student,sex, high
+no,w,34,college,not_searching,sex, high
+no,w,45,graduate,full_time,sex, high
+no,w,25,undergraduate,full_time,sex, low
+yes,w,33,undergraduate,full_time,sex, high
+yes,w,46,college,part_time,sex, high
+yes,w,33,undergraduate,full_time,sex, high
+yes,m,30,undergraduate,full_time,sex, low
+yes,w,33,undergraduate,full_time,sex, high
+yes,m,26,undergraduate,full_time,sex, low
+yes,w,30,college,part_time,sex, high
+yes,m,28,high_school,full_time,sex, high
+yes,m,59,college,disabled_or_retired,sex, low
+yes,w,44,college,part_time,sex, high
+yes,m,36,college,part_time,sex, high
+yes,w,36,college,full_time,sex, high
+yes,w,31,undergraduate,full_time,sex, high
+yes,m,29,college,full_time,sex, high
+yes,w,47,undergraduate,full_time,sex, high
+yes,w,39,undergraduate,full_time,sex, low
+yes,m,30,undergraduate,full_time,sex, low
+yes,w,45,college,not_searching,sex, high
+yes,m,47,college,part_time,sex, high
+yes,m,29,undergraduate,full_time,sex, low
+yes,m,35,undergraduate,full_time,sex, low
+yes,w,34,undergraduate,not_searching,sex, low
+yes,m,35,high_school,full_time,sex, low
+yes,w,24,college,full_time,sex, low
+yes,w,26,graduate,full_time,sex, high
+yes,m,31,undergraduate,full_time,sex, low
+yes,m,42,college,full_time,sex, low
+yes,m,35,college,not_searching,sex, high
+yes,m,48,college,full_time,sex, high
+yes,w,34,college,part_time,sex, low
+yes,m,51,graduate,part_time,sex, high
+yes,w,34,undergraduate,full_time,sex, high
+yes,w,30,college,part_time,sex, low
+yes,w,27,graduate,full_time,sex, low
+yes,w,72,undergraduate,full_time,sex, low
+yes,w,31,graduate,full_time,sex, high
+yes,w,46,college,full_time,sex, high
+yes,m,37,high_school,part_time,sex, high
+yes,m,33,college,full_time,sex, low
+yes,m,42,undergraduate,full_time,sex, high
+yes,w,30,undergraduate,full_time,sex, low
+yes,m,46,college,part_time,sex, low
+yes,m,27,college,part_time,sex, high
+yes,m,30,graduate,full_time,sex, low
+yes,w,43,college,part_time,sex, low
+yes,w,43,undergraduate,searching,sex, high
+yes,m,30,college,full_time,sex, high
+yes,m,37,graduate,full_time,sex, high
+yes,w,43,college,full_time,sex, low
+yes,w,44,college,part_time,sex, low
+yes,m,28,college,full_time,sex, low
+yes,w,37,undergraduate,full_time,sex, high
+yes,m,66,high_school,full_time,sex, low
+yes,m,30,graduate,full_time,sex, high
+yes,w,38,undergraduate,full_time,sex, low
+yes,m,41,college,full_time,sex, high
+yes,m,28,college,full_time,sex, high
+yes,m,30,undergraduate,student,sex, low
+yes,m,26,undergraduate,full_time,sex, low
+yes,w,56,undergraduate,full_time,sex, high
+yes,w,58,undergraduate,full_time,sex, high
+yes,m,37,undergraduate,full_time,sex, low
+yes,w,48,undergraduate,full_time,sex, low
+yes,m,45,graduate,full_time,sex, low
+yes,w,29,undergraduate,full_time,sex, low
+yes,w,32,undergraduate,full_time,sex, low
+yes,m,33,undergraduate,full_time,sex, low
+yes,t,29,undergraduate,student,sex, low
+yes,m,41,college,part_time,sex, low
+yes,w,41,graduate,full_time,sex, low
+yes,m,35,high_school,full_time,sex, low
+yes,w,29,undergraduate,full_time,sex, high
+yes,m,54,primary_school,full_time,sex, low
+yes,w,27,college,full_time,sex, high
+yes,m,61,college,full_time,sex, low
+yes,m,49,high_school,full_time,sex, low
+yes,m,25,primary_school,searching,sex, high
+yes,w,43,undergraduate,part_time,sex, high
+yes,w,55,undergraduate,full_time,sex, low
+yes,w,44,college,not_searching,sex, low
+yes,m,35,undergraduate,full_time,sex, low
+yes,m,40,college,full_time,sex, low
+yes,m,25,undergraduate,full_time,sex, high
+yes,w,66,undergraduate,full_time,sex, high
+yes,m,52,college,full_time,sex, high
+yes,m,31,undergraduate,full_time,sex, low
+yes,w,31,college,full_time,sex, high
+yes,m,42,high_school,full_time,sex, high
+yes,w,28,high_school,part_time,sex, high
+yes,m,24,graduate,part_time,sex, high
+yes,w,53,undergraduate,full_time,sex, high
+yes,w,34,college,full_time,sex, low
+yes,m,29,undergraduate,full_time,sex, high
+yes,w,31,college,full_time,sex, low
+yes,m,37,high_school,full_time,sex, high
+yes,m,42,undergraduate,full_time,sex, low
+yes,m,65,high_school,full_time,sex, high
+yes,m,23,high_school,full_time,sex, low
+yes,w,29,undergraduate,not_searching,sex, low
+yes,w,31,undergraduate,full_time,sex, low
+yes,w,55,high_school,searching,sex, low
+yes,m,33,college,searching,sex, high
+yes,w,25,undergraduate,part_time,sex, low
+yes,m,63,undergraduate,disabled_or_retired,sex, high
+yes,m,43,undergraduate,full_time,sex, high
+yes,w,37,college,not_searching,sex, high
+yes,m,32,college,full_time,sex, low
+yes,m,24,high_school,full_time,sex, high
+yes,m,25,college,full_time,sex, high
+yes,m,36,undergraduate,full_time,sex, low
+yes,m,29,undergraduate,full_time,sex, low
+yes,m,59,college,full_time,sex, high
+yes,m,41,college,full_time,sex, high
+yes,w,60,high_school,full_time,sex, low
+yes,m,32,undergraduate,full_time,sex, low
+yes,w,37,high_school,not_searching,sex, high
+yes,w,35,college,not_searching,sex, high
+yes,m,39,undergraduate,full_time,sex, high
+yes,w,33,graduate,full_time,sex, low
+yes,m,38,high_school,full_time,sex, low
+yes,m,40,college,full_time,sex, high
+yes,m,23,college,full_time,sex, low
+yes,w,52,graduate,full_time,sex, high
+yes,m,27,undergraduate,full_time,sex, low
+yes,m,30,high_school,full_time,sex, high
+yes,m,47,high_school,full_time,sex, high
+yes,m,57,college,full_time,sex, high
+yes,w,50,college,full_time,sex, high
+yes,m,25,high_school,full_time,sex, high
+yes,w,50,college,part_time,sex, high
+yes,w,29,undergraduate,full_time,sex, high
+yes,m,25,undergraduate,full_time,sex, high
+yes,w,42,high_school,full_time,sex, low
+yes,m,53,high_school,full_time,sex, low
+yes,w,23,undergraduate,student,sex, low
+yes,m,33,college,full_time,sex, low
+yes,m,31,college,part_time,sex, high
+yes,w,54,college,full_time,sex, high
+yes,w,31,undergraduate,full_time,sex, low
+yes,w,27,college,full_time,sex, high
+yes,m,51,undergraduate,full_time,sex, low
+yes,m,30,college,full_time,sex, high
+yes,w,35,undergraduate,full_time,sex, high
+yes,w,33,graduate,part_time,sex, high
+yes,m,39,college,disabled_or_retired,sex, low
+yes,m,39,high_school,full_time,sex, low
+yes,w,37,undergraduate,part_time,sex, high
+yes,w,28,high_school,not_searching,sex, low
+yes,w,59,college,part_time,sex, high
+yes,m,24,undergraduate,full_time,sex, high
+yes,m,35,undergraduate,full_time,sex, high
+yes,m,38,high_school,full_time,sex, high
+yes,m,33,college,full_time,sex, low
+yes,m,30,college,full_time,sex, low
+yes,m,45,college,full_time,sex, high
+yes,w,33,undergraduate,not_searching,sex, high
+yes,w,32,high_school,full_time,sex, high
+yes,w,42,undergraduate,full_time,sex, low
+yes,w,32,college,full_time,sex, high
+yes,m,43,high_school,full_time,sex, low
+yes,w,23,college,searching,sex, low
+yes,w,59,college,full_time,sex, high
+yes,w,27,undergraduate,full_time,sex, low
+yes,m,23,college,student,sex, low
+yes,m,54,high_school,full_time,sex, low
+yes,m,36,undergraduate,full_time,sex, low
+yes,m,30,high_school,full_time,sex, low
+yes,m,29,undergraduate,full_time,sex, high
+yes,w,28,undergraduate,full_time,sex, high
+yes,m,33,college,disabled_or_retired,sex, low
+yes,m,31,college,full_time,sex, high
+yes,m,25,college,part_time,sex, low
+yes,m,33,undergraduate,full_time,sex, high
+yes,w,37,high_school,full_time,sex, low
+yes,w,50,undergraduate,full_time,sex, low
+yes,w,24,college,full_time,sex, low
+yes,m,29,undergraduate,full_time,sex, high
+yes,w,35,undergraduate,full_time,sex, high
+yes,w,32,college,full_time,sex, high
+yes,m,24,undergraduate,full_time,sex, low
+yes,m,29,high_school,full_time,sex, low
+yes,w,36,college,full_time,sex, high
+yes,w,27,college,part_time,sex, high
+yes,w,25,college,part_time,sex, high
+yes,m,54,undergraduate,full_time,sex, low
+yes,m,35,graduate,part_time,sex, low
+yes,w,61,college,full_time,sex, high
+yes,w,41,graduate,full_time,sex, low
+yes,m,34,high_school,part_time,sex, high
+yes,w,33,undergraduate,full_time,sex, high
+yes,m,35,college,full_time,sex, low
+yes,w,45,college,part_time,sex, high
+yes,m,41,undergraduate,full_time,sex, high
+yes,w,45,undergraduate,full_time,sex, high
+yes,m,32,high_school,full_time,sex, low
+yes,w,23,undergraduate,full_time,sex, high
+yes,w,31,undergraduate,full_time,sex, high
+yes,w,33,graduate,searching,sex, high
+yes,m,25,undergraduate,full_time,sex, high
+yes,m,43,college,full_time,sex, low
+yes,m,34,undergraduate,full_time,sex, low
+yes,m,41,college,full_time,sex, low
+yes,w,26,undergraduate,full_time,sex, low
+yes,m,27,high_school,full_time,sex, high
+yes,w,53,undergraduate,full_time,sex, high
+yes,m,35,high_school,searching,sex, high
+yes,w,32,high_school,full_time,sex, high
+yes,m,38,college,full_time,sex, low
+yes,w,38,college,part_time,sex, high
+yes,w,46,primary_school,disabled_or_retired,sex, low
+yes,m,36,undergraduate,full_time,sex, low
+yes,w,51,college,full_time,sex, low
+yes,m,56,graduate,full_time,sex, high
+yes,m,32,undergraduate,full_time,sex, high
+yes,m,35,graduate,full_time,sex, low
+yes,m,29,undergraduate,full_time,sex, low
+yes,m,35,college,full_time,sex, high
+yes,w,18,undergraduate,part_time,sex, low
+yes,m,30,undergraduate,full_time,sex, high
+yes,w,32,high_school,full_time,sex, high
+yes,m,68,high_school,not_searching,sex, high
+yes,m,35,undergraduate,full_time,sex, low
+yes,m,29,graduate,full_time,sex, low
+yes,m,43,undergraduate,full_time,sex, high
+yes,m,51,college,not_searching,sex, high
+yes,m,27,college,full_time,sex, high
+yes,w,31,undergraduate,full_time,sex, high
+yes,m,52,high_school,full_time,sex, low
+yes,w,59,undergraduate,full_time,sex, high
+yes,m,63,undergraduate,disabled_or_retired,sex, high
+yes,m,36,college,full_time,sex, low
+yes,w,30,undergraduate,full_time,sex, low
+yes,w,31,college,full_time,sex, low
+yes,m,32,college,full_time,sex, high
+yes,w,42,undergraduate,part_time,sex, low
+yes,w,34,undergraduate,full_time,sex, high
+no,w,51,undergraduate,full_time,religion_and_politics,high
+no,t,35,college,disabled_or_retired,religion_and_politics,high
+no,m,38,college,full_time,religion_and_politics,low
+no,m,45,undergraduate,full_time,religion_and_politics,low
+no,w,39,graduate,full_time,religion_and_politics,low
+no,m,34,graduate,full_time,religion_and_politics,low
+no,m,33,high_school,full_time,religion_and_politics,low
+no,m,39,graduate,full_time,religion_and_politics,low
+no,m,23,graduate,student,religion_and_politics,high
+no,m,31,undergraduate,full_time,religion_and_politics,high
+no,m,28,graduate,full_time,religion_and_politics,low
+no,m,27,college,student,religion_and_politics,high
+no,m,27,graduate,full_time,religion_and_politics,high
+no,m,36,graduate,full_time,religion_and_politics,low
+no,m,40,graduate,full_time,religion_and_politics,low
+no,w,27,graduate,full_time,religion_and_politics,high
+no,m,31,graduate,full_time,religion_and_politics,low
+no,w,28,graduate,full_time,religion_and_politics,high
+no,m,32,undergraduate,full_time,religion_and_politics,low
+no,m,40,undergraduate,full_time,religion_and_politics,low
+no,m,29,graduate,full_time,religion_and_politics,high
+no,w,28,graduate,full_time,religion_and_politics,low
+no,w,22,high_school,student,religion_and_politics,low
+no,w,33,graduate,full_time,religion_and_politics,low
+no,w,33,graduate,full_time,religion_and_politics,high
+no,w,26,undergraduate,student,religion_and_politics,high
+no,m,33,graduate,full_time,religion_and_politics,low
+no,m,26,graduate,full_time,religion_and_politics,high
+no,m,33,graduate,part_time,religion_and_politics,low
+no,w,27,high_school,full_time,religion_and_politics,low
+no,m,28,graduate,full_time,religion_and_politics,low
+no,w,25,high_school,student,religion_and_politics,low
+no,m,29,graduate,full_time,religion_and_politics,low
+no,m,26,undergraduate,student,religion_and_politics,low
+no,m,46,graduate,student,religion_and_politics,low
+no,m,26,graduate,part_time,religion_and_politics,low
+no,m,37,graduate,full_time,religion_and_politics,low
+no,m,58,undergraduate,full_time,religion_and_politics,high
+no,w,23,undergraduate,student,religion_and_politics,low
+no,w,32,graduate,searching,religion_and_politics,low
+no,m,23,undergraduate,student,religion_and_politics,low
+no,w,23,high_school,student,religion_and_politics,high
+no,w,34,college,not_searching,religion_and_politics,high
+no,w,45,graduate,full_time,religion_and_politics,low
+no,w,25,undergraduate,full_time,religion_and_politics,low
+yes,w,33,undergraduate,full_time,religion_and_politics,low
+yes,w,46,college,part_time,religion_and_politics,low
+yes,w,33,undergraduate,full_time,religion_and_politics,high
+yes,m,30,undergraduate,full_time,religion_and_politics,low
+yes,w,33,undergraduate,full_time,religion_and_politics,high
+yes,m,26,undergraduate,full_time,religion_and_politics,low
+yes,w,30,college,part_time,religion_and_politics,high
+yes,m,28,high_school,full_time,religion_and_politics,high
+yes,m,59,college,disabled_or_retired,religion_and_politics,low
+yes,w,44,college,part_time,religion_and_politics,high
+yes,m,36,college,part_time,religion_and_politics,low
+yes,w,36,college,full_time,religion_and_politics,low
+yes,w,31,undergraduate,full_time,religion_and_politics,low
+yes,m,29,college,full_time,religion_and_politics,low
+yes,w,47,undergraduate,full_time,religion_and_politics,low
+yes,w,39,undergraduate,full_time,religion_and_politics,high
+yes,m,30,undergraduate,full_time,religion_and_politics,low
+yes,w,45,college,not_searching,religion_and_politics,low
+yes,m,47,college,part_time,religion_and_politics,low
+yes,m,29,undergraduate,full_time,religion_and_politics,low
+yes,m,35,undergraduate,full_time,religion_and_politics,high
+yes,w,34,undergraduate,not_searching,religion_and_politics,high
+yes,m,35,high_school,full_time,religion_and_politics,low
+yes,w,24,college,full_time,religion_and_politics,low
+yes,w,26,graduate,full_time,religion_and_politics,low
+yes,m,31,undergraduate,full_time,religion_and_politics,high
+yes,m,42,college,full_time,religion_and_politics,low
+yes,m,35,college,not_searching,religion_and_politics,low
+yes,m,48,college,full_time,religion_and_politics,high
+yes,w,34,college,part_time,religion_and_politics,low
+yes,m,51,graduate,part_time,religion_and_politics,low
+yes,w,34,undergraduate,full_time,religion_and_politics,high
+yes,w,30,college,part_time,religion_and_politics,low
+yes,w,27,graduate,full_time,religion_and_politics,high
+yes,w,72,undergraduate,full_time,religion_and_politics,low
+yes,w,31,graduate,full_time,religion_and_politics,low
+yes,w,46,college,full_time,religion_and_politics,low
+yes,m,37,high_school,part_time,religion_and_politics,low
+yes,m,33,college,full_time,religion_and_politics,low
+yes,m,42,undergraduate,full_time,religion_and_politics,high
+yes,w,30,undergraduate,full_time,religion_and_politics,low
+yes,m,46,college,part_time,religion_and_politics,low
+yes,m,27,college,part_time,religion_and_politics,high
+yes,m,30,graduate,full_time,religion_and_politics,low
+yes,w,43,college,part_time,religion_and_politics,low
+yes,w,43,undergraduate,searching,religion_and_politics,high
+yes,m,30,college,full_time,religion_and_politics,high
+yes,m,37,graduate,full_time,religion_and_politics,low
+yes,w,43,college,full_time,religion_and_politics,low
+yes,w,44,college,part_time,religion_and_politics,low
+yes,m,28,college,full_time,religion_and_politics,low
+yes,w,37,undergraduate,full_time,religion_and_politics,high
+yes,m,66,high_school,full_time,religion_and_politics,low
+yes,m,30,graduate,full_time,religion_and_politics,low
+yes,w,38,undergraduate,full_time,religion_and_politics,high
+yes,m,41,college,full_time,religion_and_politics,high
+yes,m,28,college,full_time,religion_and_politics,low
+yes,m,30,undergraduate,student,religion_and_politics,high
+yes,m,26,undergraduate,full_time,religion_and_politics,low
+yes,w,56,undergraduate,full_time,religion_and_politics,high
+yes,w,58,undergraduate,full_time,religion_and_politics,low
+yes,m,37,undergraduate,full_time,religion_and_politics,low
+yes,w,48,undergraduate,full_time,religion_and_politics,low
+yes,m,45,graduate,full_time,religion_and_politics,low
+yes,w,29,undergraduate,full_time,religion_and_politics,high
+yes,w,32,undergraduate,full_time,religion_and_politics,low
+yes,m,33,undergraduate,full_time,religion_and_politics,high
+yes,t,29,undergraduate,student,religion_and_politics,low
+yes,m,41,college,part_time,religion_and_politics,high
+yes,w,41,graduate,full_time,religion_and_politics,low
+yes,m,35,high_school,full_time,religion_and_politics,low
+yes,w,29,undergraduate,full_time,religion_and_politics,low
+yes,m,54,primary_school,full_time,religion_and_politics,low
+yes,w,27,college,full_time,religion_and_politics,low
+yes,m,61,college,full_time,religion_and_politics,high
+yes,m,49,high_school,full_time,religion_and_politics,low
+yes,m,25,primary_school,searching,religion_and_politics,low
+yes,w,43,undergraduate,part_time,religion_and_politics,low
+yes,w,55,undergraduate,full_time,religion_and_politics,low
+yes,w,44,college,not_searching,religion_and_politics,low
+yes,m,35,undergraduate,full_time,religion_and_politics,low
+yes,m,40,college,full_time,religion_and_politics,high
+yes,m,25,undergraduate,full_time,religion_and_politics,low
+yes,w,66,undergraduate,full_time,religion_and_politics,high
+yes,m,52,college,full_time,religion_and_politics,low
+yes,m,31,undergraduate,full_time,religion_and_politics,low
+yes,w,31,college,full_time,religion_and_politics,low
+yes,m,42,high_school,full_time,religion_and_politics,low
+yes,w,28,high_school,part_time,religion_and_politics,low
+yes,m,24,graduate,part_time,religion_and_politics,low
+yes,w,53,undergraduate,full_time,religion_and_politics,low
+yes,w,34,college,full_time,religion_and_politics,low
+yes,m,29,undergraduate,full_time,religion_and_politics,high
+yes,w,31,college,full_time,religion_and_politics,low
+yes,m,37,high_school,full_time,religion_and_politics,low
+yes,m,42,undergraduate,full_time,religion_and_politics,low
+yes,m,65,high_school,full_time,religion_and_politics,low
+yes,m,23,high_school,full_time,religion_and_politics,low
+yes,w,29,undergraduate,not_searching,religion_and_politics,low
+yes,w,31,undergraduate,full_time,religion_and_politics,low
+yes,w,55,high_school,searching,religion_and_politics,low
+yes,m,33,college,searching,religion_and_politics,high
+yes,w,25,undergraduate,part_time,religion_and_politics,low
+yes,m,63,undergraduate,disabled_or_retired,religion_and_politics,high
+yes,m,43,undergraduate,full_time,religion_and_politics,high
+yes,w,37,college,not_searching,religion_and_politics,high
+yes,m,32,college,full_time,religion_and_politics,low
+yes,m,24,high_school,full_time,religion_and_politics,low
+yes,m,25,college,full_time,religion_and_politics,low
+yes,m,36,undergraduate,full_time,religion_and_politics,low
+yes,m,29,undergraduate,full_time,religion_and_politics,low
+yes,m,59,college,full_time,religion_and_politics,high
+yes,m,41,college,full_time,religion_and_politics,low
+yes,w,60,high_school,full_time,religion_and_politics,low
+yes,m,32,undergraduate,full_time,religion_and_politics,low
+yes,w,37,high_school,not_searching,religion_and_politics,low
+yes,w,35,college,not_searching,religion_and_politics,low
+yes,m,39,undergraduate,full_time,religion_and_politics,high
+yes,w,33,graduate,full_time,religion_and_politics,low
+yes,m,38,high_school,full_time,religion_and_politics,low
+yes,m,40,college,full_time,religion_and_politics,low
+yes,m,23,college,full_time,religion_and_politics,low
+yes,w,52,graduate,full_time,religion_and_politics,low
+yes,m,27,undergraduate,full_time,religion_and_politics,low
+yes,m,30,high_school,full_time,religion_and_politics,high
+yes,m,47,high_school,full_time,religion_and_politics,low
+yes,m,57,college,full_time,religion_and_politics,high
+yes,w,50,college,full_time,religion_and_politics,low
+yes,m,25,high_school,full_time,religion_and_politics,high
+yes,w,50,college,part_time,religion_and_politics,low
+yes,w,29,undergraduate,full_time,religion_and_politics,high
+yes,m,25,undergraduate,full_time,religion_and_politics,low
+yes,w,42,high_school,full_time,religion_and_politics,low
+yes,m,53,high_school,full_time,religion_and_politics,low
+yes,w,23,undergraduate,student,religion_and_politics,low
+yes,m,33,college,full_time,religion_and_politics,low
+yes,m,31,college,part_time,religion_and_politics,low
+yes,w,54,college,full_time,religion_and_politics,low
+yes,w,31,undergraduate,full_time,religion_and_politics,high
+yes,w,27,college,full_time,religion_and_politics,high
+yes,m,51,undergraduate,full_time,religion_and_politics,low
+yes,m,30,college,full_time,religion_and_politics,high
+yes,w,35,undergraduate,full_time,religion_and_politics,low
+yes,w,33,graduate,part_time,religion_and_politics,low
+yes,m,39,college,disabled_or_retired,religion_and_politics,low
+yes,m,39,high_school,full_time,religion_and_politics,high
+yes,w,37,undergraduate,part_time,religion_and_politics,high
+yes,w,28,high_school,not_searching,religion_and_politics,low
+yes,w,59,college,part_time,religion_and_politics,high
+yes,m,24,undergraduate,full_time,religion_and_politics,high
+yes,m,35,undergraduate,full_time,religion_and_politics,low
+yes,m,38,high_school,full_time,religion_and_politics,low
+yes,m,33,college,full_time,religion_and_politics,low
+yes,m,30,college,full_time,religion_and_politics,low
+yes,m,45,college,full_time,religion_and_politics,low
+yes,w,33,undergraduate,not_searching,religion_and_politics,low
+yes,w,32,high_school,full_time,religion_and_politics,high
+yes,w,42,undergraduate,full_time,religion_and_politics,low
+yes,w,32,college,full_time,religion_and_politics,low
+yes,m,43,high_school,full_time,religion_and_politics,low
+yes,w,23,college,searching,religion_and_politics,low
+yes,w,59,college,full_time,religion_and_politics,high
+yes,w,27,undergraduate,full_time,religion_and_politics,low
+yes,m,23,college,student,religion_and_politics,high
+yes,m,54,high_school,full_time,religion_and_politics,low
+yes,m,36,undergraduate,full_time,religion_and_politics,low
+yes,m,30,high_school,full_time,religion_and_politics,low
+yes,m,29,undergraduate,full_time,religion_and_politics,high
+yes,w,28,undergraduate,full_time,religion_and_politics,low
+yes,m,33,college,disabled_or_retired,religion_and_politics,low
+yes,m,31,college,full_time,religion_and_politics,high
+yes,m,25,college,part_time,religion_and_politics,low
+yes,m,33,undergraduate,full_time,religion_and_politics,high
+yes,w,37,high_school,full_time,religion_and_politics,low
+yes,w,50,undergraduate,full_time,religion_and_politics,low
+yes,w,24,college,full_time,religion_and_politics,low
+yes,m,29,undergraduate,full_time,religion_and_politics,low
+yes,w,35,undergraduate,full_time,religion_and_politics,low
+yes,w,32,college,full_time,religion_and_politics,low
+yes,m,24,undergraduate,full_time,religion_and_politics,low
+yes,m,29,high_school,full_time,religion_and_politics,low
+yes,w,36,college,full_time,religion_and_politics,low
+yes,w,27,college,part_time,religion_and_politics,low
+yes,w,25,college,part_time,religion_and_politics,low
+yes,m,54,undergraduate,full_time,religion_and_politics,low
+yes,m,35,graduate,part_time,religion_and_politics,low
+yes,w,61,college,full_time,religion_and_politics,low
+yes,w,41,graduate,full_time,religion_and_politics,low
+yes,m,34,high_school,part_time,religion_and_politics,low
+yes,w,33,undergraduate,full_time,religion_and_politics,low
+yes,m,35,college,full_time,religion_and_politics,low
+yes,w,45,college,part_time,religion_and_politics,low
+yes,m,41,undergraduate,full_time,religion_and_politics,high
+yes,w,45,undergraduate,full_time,religion_and_politics,high
+yes,m,32,high_school,full_time,religion_and_politics,low
+yes,w,23,undergraduate,full_time,religion_and_politics,low
+yes,w,31,undergraduate,full_time,religion_and_politics,low
+yes,w,33,graduate,searching,religion_and_politics,low
+yes,m,25,undergraduate,full_time,religion_and_politics,low
+yes,m,43,college,full_time,religion_and_politics,low
+yes,m,34,undergraduate,full_time,religion_and_politics,low
+yes,m,41,college,full_time,religion_and_politics,high
+yes,w,26,undergraduate,full_time,religion_and_politics,low
+yes,m,27,high_school,full_time,religion_and_politics,high
+yes,w,53,undergraduate,full_time,religion_and_politics,low
+yes,m,35,high_school,searching,religion_and_politics,low
+yes,w,32,high_school,full_time,religion_and_politics,high
+yes,m,38,college,full_time,religion_and_politics,high
+yes,w,38,college,part_time,religion_and_politics,low
+yes,w,46,primary_school,disabled_or_retired,religion_and_politics,low
+yes,m,36,undergraduate,full_time,religion_and_politics,low
+yes,w,51,college,full_time,religion_and_politics,low
+yes,m,56,graduate,full_time,religion_and_politics,high
+yes,m,32,undergraduate,full_time,religion_and_politics,low
+yes,m,35,graduate,full_time,religion_and_politics,low
+yes,m,29,undergraduate,full_time,religion_and_politics,low
+yes,m,35,college,full_time,religion_and_politics,high
+yes,w,18,undergraduate,part_time,religion_and_politics,low
+yes,m,30,undergraduate,full_time,religion_and_politics,low
+yes,w,32,high_school,full_time,religion_and_politics,low
+yes,m,68,high_school,not_searching,religion_and_politics,high
+yes,m,35,undergraduate,full_time,religion_and_politics,low
+yes,m,29,graduate,full_time,religion_and_politics,high
+yes,m,43,undergraduate,full_time,religion_and_politics,high
+yes,m,51,college,not_searching,religion_and_politics,high
+yes,m,27,college,full_time,religion_and_politics,high
+yes,w,31,undergraduate,full_time,religion_and_politics,low
+yes,m,52,high_school,full_time,religion_and_politics,low
+yes,w,59,undergraduate,full_time,religion_and_politics,high
+yes,m,63,undergraduate,disabled_or_retired,religion_and_politics,high
+yes,m,36,college,full_time,religion_and_politics,low
+yes,w,30,undergraduate,full_time,religion_and_politics,low
+yes,w,31,college,full_time,religion_and_politics,low
+yes,m,32,college,full_time,religion_and_politics,low
+yes,w,42,undergraduate,part_time,religion_and_politics,low
+yes,w,34,undergraduate,full_time,religion_and_politics,low
+no,w,51,undergraduate,full_time,strong_sentiment, high
+no,t,35,college,disabled_or_retired,strong_sentiment, low
+no,m,38,college,full_time,strong_sentiment, high
+no,m,45,undergraduate,full_time,strong_sentiment, high
+no,w,39,graduate,full_time,strong_sentiment, low
+no,m,34,graduate,full_time,strong_sentiment, high
+no,m,33,high_school,full_time,strong_sentiment, high
+no,m,39,graduate,full_time,strong_sentiment, high
+no,m,23,graduate,student,strong_sentiment, high
+no,m,31,undergraduate,full_time,strong_sentiment, low
+no,m,28,graduate,full_time,strong_sentiment, low
+no,m,27,college,student,strong_sentiment, high
+no,m,27,graduate,full_time,strong_sentiment, high
+no,m,36,graduate,full_time,strong_sentiment, high
+no,m,40,graduate,full_time,strong_sentiment, high
+no,w,27,graduate,full_time,strong_sentiment, high
+no,m,31,graduate,full_time,strong_sentiment, high
+no,w,28,graduate,full_time,strong_sentiment, low
+no,m,32,undergraduate,full_time,strong_sentiment, high
+no,m,40,undergraduate,full_time,strong_sentiment, low
+no,m,29,graduate,full_time,strong_sentiment, high
+no,w,28,graduate,full_time,strong_sentiment, high
+no,w,22,high_school,student,strong_sentiment, high
+no,w,33,graduate,full_time,strong_sentiment, high
+no,w,33,graduate,full_time,strong_sentiment, high
+no,w,26,undergraduate,student,strong_sentiment, high
+no,m,33,graduate,full_time,strong_sentiment, high
+no,m,26,graduate,full_time,strong_sentiment, high
+no,m,33,graduate,part_time,strong_sentiment, high
+no,w,27,high_school,full_time,strong_sentiment, high
+no,m,28,graduate,full_time,strong_sentiment, low
+no,w,25,high_school,student,strong_sentiment, low
+no,m,29,graduate,full_time,strong_sentiment, low
+no,m,26,undergraduate,student,strong_sentiment, low
+no,m,46,graduate,student,strong_sentiment, low
+no,m,26,graduate,part_time,strong_sentiment, low
+no,m,37,graduate,full_time,strong_sentiment, low
+no,m,58,undergraduate,full_time,strong_sentiment, low
+no,w,23,undergraduate,student,strong_sentiment, high
+no,w,32,graduate,searching,strong_sentiment, high
+no,m,23,undergraduate,student,strong_sentiment, low
+no,w,23,high_school,student,strong_sentiment, high
+no,w,34,college,not_searching,strong_sentiment, high
+no,w,45,graduate,full_time,strong_sentiment, low
+no,w,25,undergraduate,full_time,strong_sentiment, low
+yes,w,33,undergraduate,full_time,strong_sentiment, high
+yes,w,46,college,part_time,strong_sentiment, high
+yes,w,33,undergraduate,full_time,strong_sentiment, high
+yes,m,30,undergraduate,full_time,strong_sentiment, low
+yes,w,33,undergraduate,full_time,strong_sentiment, low
+yes,m,26,undergraduate,full_time,strong_sentiment, low
+yes,w,30,college,part_time,strong_sentiment, low
+yes,m,28,high_school,full_time,strong_sentiment, high
+yes,m,59,college,disabled_or_retired,strong_sentiment, high
+yes,w,44,college,part_time,strong_sentiment, high
+yes,m,36,college,part_time,strong_sentiment, high
+yes,w,36,college,full_time,strong_sentiment, low
+yes,w,31,undergraduate,full_time,strong_sentiment, low
+yes,m,29,college,full_time,strong_sentiment, high
+yes,w,47,undergraduate,full_time,strong_sentiment, low
+yes,w,39,undergraduate,full_time,strong_sentiment, high
+yes,m,30,undergraduate,full_time,strong_sentiment, high
+yes,w,45,college,not_searching,strong_sentiment, high
+yes,m,47,college,part_time,strong_sentiment, high
+yes,m,29,undergraduate,full_time,strong_sentiment, low
+yes,m,35,undergraduate,full_time,strong_sentiment, high
+yes,w,34,undergraduate,not_searching,strong_sentiment, high
+yes,m,35,high_school,full_time,strong_sentiment, high
+yes,w,24,college,full_time,strong_sentiment, high
+yes,w,26,graduate,full_time,strong_sentiment, low
+yes,m,31,undergraduate,full_time,strong_sentiment, low
+yes,m,42,college,full_time,strong_sentiment, high
+yes,m,35,college,not_searching,strong_sentiment, high
+yes,m,48,college,full_time,strong_sentiment, high
+yes,w,34,college,part_time,strong_sentiment, low
+yes,m,51,graduate,part_time,strong_sentiment, low
+yes,w,34,undergraduate,full_time,strong_sentiment, low
+yes,w,30,college,part_time,strong_sentiment, low
+yes,w,27,graduate,full_time,strong_sentiment, high
+yes,w,72,undergraduate,full_time,strong_sentiment, low
+yes,w,31,graduate,full_time,strong_sentiment, low
+yes,w,46,college,full_time,strong_sentiment, high
+yes,m,37,high_school,part_time,strong_sentiment, high
+yes,m,33,college,full_time,strong_sentiment, high
+yes,m,42,undergraduate,full_time,strong_sentiment, high
+yes,w,30,undergraduate,full_time,strong_sentiment, high
+yes,m,46,college,part_time,strong_sentiment, low
+yes,m,27,college,part_time,strong_sentiment, high
+yes,m,30,graduate,full_time,strong_sentiment, high
+yes,w,43,college,part_time,strong_sentiment, high
+yes,w,43,undergraduate,searching,strong_sentiment, high
+yes,m,30,college,full_time,strong_sentiment, high
+yes,m,37,graduate,full_time,strong_sentiment, high
+yes,w,43,college,full_time,strong_sentiment, high
+yes,w,44,college,part_time,strong_sentiment, low
+yes,m,28,college,full_time,strong_sentiment, low
+yes,w,37,undergraduate,full_time,strong_sentiment, low
+yes,m,66,high_school,full_time,strong_sentiment, high
+yes,m,30,graduate,full_time,strong_sentiment, high
+yes,w,38,undergraduate,full_time,strong_sentiment, high
+yes,m,41,college,full_time,strong_sentiment, low
+yes,m,28,college,full_time,strong_sentiment, high
+yes,m,30,undergraduate,student,strong_sentiment, high
+yes,m,26,undergraduate,full_time,strong_sentiment, low
+yes,w,56,undergraduate,full_time,strong_sentiment, high
+yes,w,58,undergraduate,full_time,strong_sentiment, low
+yes,m,37,undergraduate,full_time,strong_sentiment, low
+yes,w,48,undergraduate,full_time,strong_sentiment, high
+yes,m,45,graduate,full_time,strong_sentiment, low
+yes,w,29,undergraduate,full_time,strong_sentiment, high
+yes,w,32,undergraduate,full_time,strong_sentiment, high
+yes,m,33,undergraduate,full_time,strong_sentiment, high
+yes,t,29,undergraduate,student,strong_sentiment, high
+yes,m,41,college,part_time,strong_sentiment, low
+yes,w,41,graduate,full_time,strong_sentiment, high
+yes,m,35,high_school,full_time,strong_sentiment, high
+yes,w,29,undergraduate,full_time,strong_sentiment, low
+yes,m,54,primary_school,full_time,strong_sentiment, high
+yes,w,27,college,full_time,strong_sentiment, low
+yes,m,61,college,full_time,strong_sentiment, high
+yes,m,49,high_school,full_time,strong_sentiment, low
+yes,m,25,primary_school,searching,strong_sentiment, high
+yes,w,43,undergraduate,part_time,strong_sentiment, high
+yes,w,55,undergraduate,full_time,strong_sentiment, high
+yes,w,44,college,not_searching,strong_sentiment, high
+yes,m,35,undergraduate,full_time,strong_sentiment, low
+yes,m,40,college,full_time,strong_sentiment, high
+yes,m,25,undergraduate,full_time,strong_sentiment, high
+yes,w,66,undergraduate,full_time,strong_sentiment, high
+yes,m,52,college,full_time,strong_sentiment, low
+yes,m,31,undergraduate,full_time,strong_sentiment, low
+yes,w,31,college,full_time,strong_sentiment, low
+yes,m,42,high_school,full_time,strong_sentiment, high
+yes,w,28,high_school,part_time,strong_sentiment, high
+yes,m,24,graduate,part_time,strong_sentiment, low
+yes,w,53,undergraduate,full_time,strong_sentiment, high
+yes,w,34,college,full_time,strong_sentiment, high
+yes,m,29,undergraduate,full_time,strong_sentiment, high
+yes,w,31,college,full_time,strong_sentiment, low
+yes,m,37,high_school,full_time,strong_sentiment, high
+yes,m,42,undergraduate,full_time,strong_sentiment, low
+yes,m,65,high_school,full_time,strong_sentiment, high
+yes,m,23,high_school,full_time,strong_sentiment, high
+yes,w,29,undergraduate,not_searching,strong_sentiment, low
+yes,w,31,undergraduate,full_time,strong_sentiment, high
+yes,w,55,high_school,searching,strong_sentiment, high
+yes,m,33,college,searching,strong_sentiment, low
+yes,w,25,undergraduate,part_time,strong_sentiment, low
+yes,m,63,undergraduate,disabled_or_retired,strong_sentiment, high
+yes,m,43,undergraduate,full_time,strong_sentiment, high
+yes,w,37,college,not_searching,strong_sentiment, high
+yes,m,32,college,full_time,strong_sentiment, low
+yes,m,24,high_school,full_time,strong_sentiment, high
+yes,m,25,college,full_time,strong_sentiment, low
+yes,m,36,undergraduate,full_time,strong_sentiment, high
+yes,m,29,undergraduate,full_time,strong_sentiment, high
+yes,m,59,college,full_time,strong_sentiment, high
+yes,m,41,college,full_time,strong_sentiment, high
+yes,w,60,high_school,full_time,strong_sentiment, low
+yes,m,32,undergraduate,full_time,strong_sentiment, low
+yes,w,37,high_school,not_searching,strong_sentiment, high
+yes,w,35,college,not_searching,strong_sentiment, high
+yes,m,39,undergraduate,full_time,strong_sentiment, low
+yes,w,33,graduate,full_time,strong_sentiment, high
+yes,m,38,high_school,full_time,strong_sentiment, high
+yes,m,40,college,full_time,strong_sentiment, low
+yes,m,23,college,full_time,strong_sentiment, low
+yes,w,52,graduate,full_time,strong_sentiment, high
+yes,m,27,undergraduate,full_time,strong_sentiment, low
+yes,m,30,high_school,full_time,strong_sentiment, high
+yes,m,47,high_school,full_time,strong_sentiment, high
+yes,m,57,college,full_time,strong_sentiment, high
+yes,w,50,college,full_time,strong_sentiment, low
+yes,m,25,high_school,full_time,strong_sentiment, high
+yes,w,50,college,part_time,strong_sentiment, high
+yes,w,29,undergraduate,full_time,strong_sentiment, high
+yes,m,25,undergraduate,full_time,strong_sentiment, high
+yes,w,42,high_school,full_time,strong_sentiment, low
+yes,m,53,high_school,full_time,strong_sentiment, high
+yes,w,23,undergraduate,student,strong_sentiment, low
+yes,m,33,college,full_time,strong_sentiment, low
+yes,m,31,college,part_time,strong_sentiment, high
+yes,w,54,college,full_time,strong_sentiment, high
+yes,w,31,undergraduate,full_time,strong_sentiment, low
+yes,w,27,college,full_time,strong_sentiment, low
+yes,m,51,undergraduate,full_time,strong_sentiment, high
+yes,m,30,college,full_time,strong_sentiment, high
+yes,w,35,undergraduate,full_time,strong_sentiment, high
+yes,w,33,graduate,part_time,strong_sentiment, high
+yes,m,39,college,disabled_or_retired,strong_sentiment, low
+yes,m,39,high_school,full_time,strong_sentiment, high
+yes,w,37,undergraduate,part_time,strong_sentiment, high
+yes,w,28,high_school,not_searching,strong_sentiment, high
+yes,w,59,college,part_time,strong_sentiment, high
+yes,m,24,undergraduate,full_time,strong_sentiment, high
+yes,m,35,undergraduate,full_time,strong_sentiment, high
+yes,m,38,high_school,full_time,strong_sentiment, high
+yes,m,33,college,full_time,strong_sentiment, high
+yes,m,30,college,full_time,strong_sentiment, low
+yes,m,45,college,full_time,strong_sentiment, high
+yes,w,33,undergraduate,not_searching,strong_sentiment, high
+yes,w,32,high_school,full_time,strong_sentiment, high
+yes,w,42,undergraduate,full_time,strong_sentiment, low
+yes,w,32,college,full_time,strong_sentiment, low
+yes,m,43,high_school,full_time,strong_sentiment, high
+yes,w,23,college,searching,strong_sentiment, low
+yes,w,59,college,full_time,strong_sentiment, high
+yes,w,27,undergraduate,full_time,strong_sentiment, low
+yes,m,23,college,student,strong_sentiment, low
+yes,m,54,high_school,full_time,strong_sentiment, high
+yes,m,36,undergraduate,full_time,strong_sentiment, high
+yes,m,30,high_school,full_time,strong_sentiment, high
+yes,m,29,undergraduate,full_time,strong_sentiment, high
+yes,w,28,undergraduate,full_time,strong_sentiment, high
+yes,m,33,college,disabled_or_retired,strong_sentiment, low
+yes,m,31,college,full_time,strong_sentiment, high
+yes,m,25,college,part_time,strong_sentiment, high
+yes,m,33,undergraduate,full_time,strong_sentiment, high
+yes,w,37,high_school,full_time,strong_sentiment, high
+yes,w,50,undergraduate,full_time,strong_sentiment, low
+yes,w,24,college,full_time,strong_sentiment, high
+yes,m,29,undergraduate,full_time,strong_sentiment, high
+yes,w,35,undergraduate,full_time,strong_sentiment, low
+yes,w,32,college,full_time,strong_sentiment, low
+yes,m,24,undergraduate,full_time,strong_sentiment, high
+yes,m,29,high_school,full_time,strong_sentiment, low
+yes,w,36,college,full_time,strong_sentiment, high
+yes,w,27,college,part_time,strong_sentiment, high
+yes,w,25,college,part_time,strong_sentiment, high
+yes,m,54,undergraduate,full_time,strong_sentiment, low
+yes,m,35,graduate,part_time,strong_sentiment, high
+yes,w,61,college,full_time,strong_sentiment, high
+yes,w,41,graduate,full_time,strong_sentiment, high
+yes,m,34,high_school,part_time,strong_sentiment, low
+yes,w,33,undergraduate,full_time,strong_sentiment, high
+yes,m,35,college,full_time,strong_sentiment, low
+yes,w,45,college,part_time,strong_sentiment, high
+yes,m,41,undergraduate,full_time,strong_sentiment, high
+yes,w,45,undergraduate,full_time,strong_sentiment, high
+yes,m,32,high_school,full_time,strong_sentiment, high
+yes,w,23,undergraduate,full_time,strong_sentiment, low
+yes,w,31,undergraduate,full_time,strong_sentiment, high
+yes,w,33,graduate,searching,strong_sentiment, low
+yes,m,25,undergraduate,full_time,strong_sentiment, low
+yes,m,43,college,full_time,strong_sentiment, high
+yes,m,34,undergraduate,full_time,strong_sentiment, high
+yes,m,41,college,full_time,strong_sentiment, low
+yes,w,26,undergraduate,full_time,strong_sentiment, high
+yes,m,27,high_school,full_time,strong_sentiment, high
+yes,w,53,undergraduate,full_time,strong_sentiment, low
+yes,m,35,high_school,searching,strong_sentiment, low
+yes,w,32,high_school,full_time,strong_sentiment, low
+yes,m,38,college,full_time,strong_sentiment, high
+yes,w,38,college,part_time,strong_sentiment, high
+yes,w,46,primary_school,disabled_or_retired,strong_sentiment, low
+yes,m,36,undergraduate,full_time,strong_sentiment, low
+yes,w,51,college,full_time,strong_sentiment, low
+yes,m,56,graduate,full_time,strong_sentiment, high
+yes,m,32,undergraduate,full_time,strong_sentiment, high
+yes,m,35,graduate,full_time,strong_sentiment, low
+yes,m,29,undergraduate,full_time,strong_sentiment, high
+yes,m,35,college,full_time,strong_sentiment, low
+yes,w,18,undergraduate,part_time,strong_sentiment, low
+yes,m,30,undergraduate,full_time,strong_sentiment, high
+yes,w,32,high_school,full_time,strong_sentiment, low
+yes,m,68,high_school,not_searching,strong_sentiment, high
+yes,m,35,undergraduate,full_time,strong_sentiment, high
+yes,m,29,graduate,full_time,strong_sentiment, low
+yes,m,43,undergraduate,full_time,strong_sentiment, low
+yes,m,51,college,not_searching,strong_sentiment, high
+yes,m,27,college,full_time,strong_sentiment, low
+yes,w,31,undergraduate,full_time,strong_sentiment, high
+yes,m,52,high_school,full_time,strong_sentiment, low
+yes,w,59,undergraduate,full_time,strong_sentiment, high
+yes,m,63,undergraduate,disabled_or_retired,strong_sentiment, high
+yes,m,36,college,full_time,strong_sentiment, low
+yes,w,30,undergraduate,full_time,strong_sentiment, high
+yes,w,31,college,full_time,strong_sentiment, high
+yes,m,32,college,full_time,strong_sentiment, high
+yes,w,42,undergraduate,part_time,strong_sentiment, high
+yes,w,34,undergraduate,full_time,strong_sentiment, high
+no,w,51,undergraduate,full_time,location,high
+no,t,35,college,disabled_or_retired,location,low
+no,m,38,college,full_time,location,high
+no,m,45,undergraduate,full_time,location,high
+no,w,39,graduate,full_time,location,high
+no,m,34,graduate,full_time,location,high
+no,m,33,high_school,full_time,location,high
+no,m,39,graduate,full_time,location,high
+no,m,23,graduate,student,location,high
+no,m,31,undergraduate,full_time,location,high
+no,m,28,graduate,full_time,location,high
+no,m,27,college,student,location,high
+no,m,27,graduate,full_time,location,high
+no,m,36,graduate,full_time,location,high
+no,m,40,graduate,full_time,location,low
+no,w,27,graduate,full_time,location,high
+no,m,31,graduate,full_time,location,high
+no,w,28,graduate,full_time,location,high
+no,m,32,undergraduate,full_time,location,high
+no,m,40,undergraduate,full_time,location,high
+no,m,29,graduate,full_time,location,high
+no,w,28,graduate,full_time,location,high
+no,w,22,high_school,student,location,high
+no,w,33,graduate,full_time,location,low
+no,w,33,graduate,full_time,location,high
+no,w,26,undergraduate,student,location,high
+no,m,33,graduate,full_time,location,high
+no,m,26,graduate,full_time,location,low
+no,m,33,graduate,part_time,location,high
+no,w,27,high_school,full_time,location,high
+no,m,28,graduate,full_time,location,high
+no,w,25,high_school,student,location,high
+no,m,29,graduate,full_time,location,high
+no,m,26,undergraduate,student,location,high
+no,m,46,graduate,student,location,low
+no,m,26,graduate,part_time,location,high
+no,m,37,graduate,full_time,location,high
+no,m,58,undergraduate,full_time,location,low
+no,w,23,undergraduate,student,location,high
+no,w,32,graduate,searching,location,high
+no,m,23,undergraduate,student,location,low
+no,w,23,high_school,student,location,high
+no,w,34,college,not_searching,location,low
+no,w,45,graduate,full_time,location,low
+no,w,25,undergraduate,full_time,location,high
+yes,w,33,undergraduate,full_time,location,high
+yes,w,46,college,part_time,location,high
+yes,w,33,undergraduate,full_time,location,high
+yes,m,30,undergraduate,full_time,location,high
+yes,w,33,undergraduate,full_time,location,high
+yes,m,26,undergraduate,full_time,location,high
+yes,w,30,college,part_time,location,high
+yes,m,28,high_school,full_time,location,high
+yes,m,59,college,disabled_or_retired,location,high
+yes,w,44,college,part_time,location,low
+yes,m,36,college,part_time,location,high
+yes,w,36,college,full_time,location,high
+yes,w,31,undergraduate,full_time,location,high
+yes,m,29,college,full_time,location,high
+yes,w,47,undergraduate,full_time,location,high
+yes,w,39,undergraduate,full_time,location,high
+yes,m,30,undergraduate,full_time,location,high
+yes,w,45,college,not_searching,location,high
+yes,m,47,college,part_time,location,high
+yes,m,29,undergraduate,full_time,location,high
+yes,m,35,undergraduate,full_time,location,high
+yes,w,34,undergraduate,not_searching,location,low
+yes,m,35,high_school,full_time,location,low
+yes,w,24,college,full_time,location,high
+yes,w,26,graduate,full_time,location,high
+yes,m,31,undergraduate,full_time,location,high
+yes,m,42,college,full_time,location,high
+yes,m,35,college,not_searching,location,high
+yes,m,48,college,full_time,location,low
+yes,w,34,college,part_time,location,high
+yes,m,51,graduate,part_time,location,low
+yes,w,34,undergraduate,full_time,location,high
+yes,w,30,college,part_time,location,high
+yes,w,27,graduate,full_time,location,high
+yes,w,72,undergraduate,full_time,location,high
+yes,w,31,graduate,full_time,location,high
+yes,w,46,college,full_time,location,high
+yes,m,37,high_school,part_time,location,high
+yes,m,33,college,full_time,location,high
+yes,m,42,undergraduate,full_time,location,high
+yes,w,30,undergraduate,full_time,location,high
+yes,m,46,college,part_time,location,high
+yes,m,27,college,part_time,location,high
+yes,m,30,graduate,full_time,location,low
+yes,w,43,college,part_time,location,high
+yes,w,43,undergraduate,searching,location,high
+yes,m,30,college,full_time,location,high
+yes,m,37,graduate,full_time,location,high
+yes,w,43,college,full_time,location,high
+yes,w,44,college,part_time,location,high
+yes,m,28,college,full_time,location,high
+yes,w,37,undergraduate,full_time,location,high
+yes,m,66,high_school,full_time,location,high
+yes,m,30,graduate,full_time,location,high
+yes,w,38,undergraduate,full_time,location,high
+yes,m,41,college,full_time,location,high
+yes,m,28,college,full_time,location,low
+yes,m,30,undergraduate,student,location,high
+yes,m,26,undergraduate,full_time,location,low
+yes,w,56,undergraduate,full_time,location,high
+yes,w,58,undergraduate,full_time,location,low
+yes,m,37,undergraduate,full_time,location,low
+yes,w,48,undergraduate,full_time,location,low
+yes,m,45,graduate,full_time,location,high
+yes,w,29,undergraduate,full_time,location,high
+yes,w,32,undergraduate,full_time,location,high
+yes,m,33,undergraduate,full_time,location,high
+yes,t,29,undergraduate,student,location,high
+yes,m,41,college,part_time,location,high
+yes,w,41,graduate,full_time,location,high
+yes,m,35,high_school,full_time,location,low
+yes,w,29,undergraduate,full_time,location,low
+yes,m,54,primary_school,full_time,location,high
+yes,w,27,college,full_time,location,high
+yes,m,61,college,full_time,location,high
+yes,m,49,high_school,full_time,location,high
+yes,m,25,primary_school,searching,location,low
+yes,w,43,undergraduate,part_time,location,high
+yes,w,55,undergraduate,full_time,location,high
+yes,w,44,college,not_searching,location,high
+yes,m,35,undergraduate,full_time,location,low
+yes,m,40,college,full_time,location,high
+yes,m,25,undergraduate,full_time,location,high
+yes,w,66,undergraduate,full_time,location,high
+yes,m,52,college,full_time,location,high
+yes,m,31,undergraduate,full_time,location,high
+yes,w,31,college,full_time,location,high
+yes,m,42,high_school,full_time,location,high
+yes,w,28,high_school,part_time,location,high
+yes,m,24,graduate,part_time,location,high
+yes,w,53,undergraduate,full_time,location,high
+yes,w,34,college,full_time,location,high
+yes,m,29,undergraduate,full_time,location,high
+yes,w,31,college,full_time,location,low
+yes,m,37,high_school,full_time,location,high
+yes,m,42,undergraduate,full_time,location,high
+yes,m,65,high_school,full_time,location,high
+yes,m,23,high_school,full_time,location,high
+yes,w,29,undergraduate,not_searching,location,high
+yes,w,31,undergraduate,full_time,location,high
+yes,w,55,high_school,searching,location,high
+yes,m,33,college,searching,location,high
+yes,w,25,undergraduate,part_time,location,high
+yes,m,63,undergraduate,disabled_or_retired,location,low
+yes,m,43,undergraduate,full_time,location,high
+yes,w,37,college,not_searching,location,high
+yes,m,32,college,full_time,location,high
+yes,m,24,high_school,full_time,location,high
+yes,m,25,college,full_time,location,high
+yes,m,36,undergraduate,full_time,location,high
+yes,m,29,undergraduate,full_time,location,high
+yes,m,59,college,full_time,location,high
+yes,m,41,college,full_time,location,high
+yes,w,60,high_school,full_time,location,high
+yes,m,32,undergraduate,full_time,location,low
+yes,w,37,high_school,not_searching,location,high
+yes,w,35,college,not_searching,location,high
+yes,m,39,undergraduate,full_time,location,high
+yes,w,33,graduate,full_time,location,high
+yes,m,38,high_school,full_time,location,high
+yes,m,40,college,full_time,location,high
+yes,m,23,college,full_time,location,low
+yes,w,52,graduate,full_time,location,high
+yes,m,27,undergraduate,full_time,location,high
+yes,m,30,high_school,full_time,location,high
+yes,m,47,high_school,full_time,location,high
+yes,m,57,college,full_time,location,high
+yes,w,50,college,full_time,location,high
+yes,m,25,high_school,full_time,location,high
+yes,w,50,college,part_time,location,high
+yes,w,29,undergraduate,full_time,location,high
+yes,m,25,undergraduate,full_time,location,high
+yes,w,42,high_school,full_time,location,high
+yes,m,53,high_school,full_time,location,low
+yes,w,23,undergraduate,student,location,high
+yes,m,33,college,full_time,location,high
+yes,m,31,college,part_time,location,high
+yes,w,54,college,full_time,location,high
+yes,w,31,undergraduate,full_time,location,low
+yes,w,27,college,full_time,location,high
+yes,m,51,undergraduate,full_time,location,high
+yes,m,30,college,full_time,location,high
+yes,w,35,undergraduate,full_time,location,high
+yes,w,33,graduate,part_time,location,high
+yes,m,39,college,disabled_or_retired,location,high
+yes,m,39,high_school,full_time,location,high
+yes,w,37,undergraduate,part_time,location,high
+yes,w,28,high_school,not_searching,location,high
+yes,w,59,college,part_time,location,high
+yes,m,24,undergraduate,full_time,location,high
+yes,m,35,undergraduate,full_time,location,high
+yes,m,38,high_school,full_time,location,high
+yes,m,33,college,full_time,location,low
+yes,m,30,college,full_time,location,high
+yes,m,45,college,full_time,location,high
+yes,w,33,undergraduate,not_searching,location,high
+yes,w,32,high_school,full_time,location,high
+yes,w,42,undergraduate,full_time,location,high
+yes,w,32,college,full_time,location,high
+yes,m,43,high_school,full_time,location,high
+yes,w,23,college,searching,location,high
+yes,w,59,college,full_time,location,high
+yes,w,27,undergraduate,full_time,location,high
+yes,m,23,college,student,location,low
+yes,m,54,high_school,full_time,location,high
+yes,m,36,undergraduate,full_time,location,high
+yes,m,30,high_school,full_time,location,high
+yes,m,29,undergraduate,full_time,location,high
+yes,w,28,undergraduate,full_time,location,high
+yes,m,33,college,disabled_or_retired,location,low
+yes,m,31,college,full_time,location,high
+yes,m,25,college,part_time,location,high
+yes,m,33,undergraduate,full_time,location,high
+yes,w,37,high_school,full_time,location,high
+yes,w,50,undergraduate,full_time,location,high
+yes,w,24,college,full_time,location,low
+yes,m,29,undergraduate,full_time,location,high
+yes,w,35,undergraduate,full_time,location,high
+yes,w,32,college,full_time,location,high
+yes,m,24,undergraduate,full_time,location,high
+yes,m,29,high_school,full_time,location,high
+yes,w,36,college,full_time,location,low
+yes,w,27,college,part_time,location,high
+yes,w,25,college,part_time,location,high
+yes,m,54,undergraduate,full_time,location,high
+yes,m,35,graduate,part_time,location,high
+yes,w,61,college,full_time,location,high
+yes,w,41,graduate,full_time,location,high
+yes,m,34,high_school,part_time,location,low
+yes,w,33,undergraduate,full_time,location,high
+yes,m,35,college,full_time,location,low
+yes,w,45,college,part_time,location,high
+yes,m,41,undergraduate,full_time,location,high
+yes,w,45,undergraduate,full_time,location,high
+yes,m,32,high_school,full_time,location,high
+yes,w,23,undergraduate,full_time,location,low
+yes,w,31,undergraduate,full_time,location,high
+yes,w,33,graduate,searching,location,high
+yes,m,25,undergraduate,full_time,location,high
+yes,m,43,college,full_time,location,high
+yes,m,34,undergraduate,full_time,location,high
+yes,m,41,college,full_time,location,low
+yes,w,26,undergraduate,full_time,location,high
+yes,m,27,high_school,full_time,location,high
+yes,w,53,undergraduate,full_time,location,high
+yes,m,35,high_school,searching,location,high
+yes,w,32,high_school,full_time,location,high
+yes,m,38,college,full_time,location,high
+yes,w,38,college,part_time,location,high
+yes,w,46,primary_school,disabled_or_retired,location,low
+yes,m,36,undergraduate,full_time,location,high
+yes,w,51,college,full_time,location,high
+yes,m,56,graduate,full_time,location,high
+yes,m,32,undergraduate,full_time,location,high
+yes,m,35,graduate,full_time,location,low
+yes,m,29,undergraduate,full_time,location,high
+yes,m,35,college,full_time,location,low
+yes,w,18,undergraduate,part_time,location,low
+yes,m,30,undergraduate,full_time,location,high
+yes,w,32,high_school,full_time,location,low
+yes,m,68,high_school,not_searching,location,high
+yes,m,35,undergraduate,full_time,location,high
+yes,m,29,graduate,full_time,location,high
+yes,m,43,undergraduate,full_time,location,high
+yes,m,51,college,not_searching,location,high
+yes,m,27,college,full_time,location,high
+yes,w,31,undergraduate,full_time,location,high
+yes,m,52,high_school,full_time,location,high
+yes,w,59,undergraduate,full_time,location,high
+yes,m,63,undergraduate,disabled_or_retired,location,high
+yes,m,36,college,full_time,location,high
+yes,w,30,undergraduate,full_time,location,high
+yes,w,31,college,full_time,location,high
+yes,m,32,college,full_time,location,high
+yes,w,42,undergraduate,part_time,location,high
+yes,w,34,undergraduate,full_time,location,high
+no,w,51,undergraduate,full_time,personal_identifiers, low
+no,t,35,college,disabled_or_retired,personal_identifiers, high
+no,m,38,college,full_time,personal_identifiers, low
+no,m,45,undergraduate,full_time,personal_identifiers, high
+no,w,39,graduate,full_time,personal_identifiers, high
+no,m,34,graduate,full_time,personal_identifiers, high
+no,m,33,high_school,full_time,personal_identifiers, low
+no,m,39,graduate,full_time,personal_identifiers, high
+no,m,23,graduate,student,personal_identifiers, high
+no,m,31,undergraduate,full_time,personal_identifiers, high
+no,m,28,graduate,full_time,personal_identifiers, high
+no,m,27,college,student,personal_identifiers, low
+no,m,27,graduate,full_time,personal_identifiers, low
+no,m,36,graduate,full_time,personal_identifiers, low
+no,m,40,graduate,full_time,personal_identifiers, low
+no,w,27,graduate,full_time,personal_identifiers, high
+no,m,31,graduate,full_time,personal_identifiers, high
+no,w,28,graduate,full_time,personal_identifiers, high
+no,m,32,undergraduate,full_time,personal_identifiers, low
+no,m,40,undergraduate,full_time,personal_identifiers, low
+no,m,29,graduate,full_time,personal_identifiers, low
+no,w,28,graduate,full_time,personal_identifiers, high
+no,w,22,high_school,student,personal_identifiers, high
+no,w,33,graduate,full_time,personal_identifiers, high
+no,w,33,graduate,full_time,personal_identifiers, high
+no,w,26,undergraduate,student,personal_identifiers, low
+no,m,33,graduate,full_time,personal_identifiers, high
+no,m,26,graduate,full_time,personal_identifiers, high
+no,m,33,graduate,part_time,personal_identifiers, low
+no,w,27,high_school,full_time,personal_identifiers, low
+no,m,28,graduate,full_time,personal_identifiers, high
+no,w,25,high_school,student,personal_identifiers, high
+no,m,29,graduate,full_time,personal_identifiers, low
+no,m,26,undergraduate,student,personal_identifiers, high
+no,m,46,graduate,student,personal_identifiers, low
+no,m,26,graduate,part_time,personal_identifiers, high
+no,m,37,graduate,full_time,personal_identifiers, high
+no,m,58,undergraduate,full_time,personal_identifiers, high
+no,w,23,undergraduate,student,personal_identifiers, high
+no,w,32,graduate,searching,personal_identifiers, high
+no,m,23,undergraduate,student,personal_identifiers, low
+no,w,23,high_school,student,personal_identifiers, low
+no,w,34,college,not_searching,personal_identifiers, high
+no,w,45,graduate,full_time,personal_identifiers, high
+no,w,25,undergraduate,full_time,personal_identifiers, low
+yes,w,33,undergraduate,full_time,personal_identifiers, high
+yes,w,46,college,part_time,personal_identifiers, low
+yes,w,33,undergraduate,full_time,personal_identifiers, low
+yes,m,30,undergraduate,full_time,personal_identifiers, low
+yes,w,33,undergraduate,full_time,personal_identifiers, low
+yes,m,26,undergraduate,full_time,personal_identifiers, high
+yes,w,30,college,part_time,personal_identifiers, low
+yes,m,28,high_school,full_time,personal_identifiers, high
+yes,m,59,college,disabled_or_retired,personal_identifiers, low
+yes,w,44,college,part_time,personal_identifiers, high
+yes,m,36,college,part_time,personal_identifiers, low
+yes,w,36,college,full_time,personal_identifiers, high
+yes,w,31,undergraduate,full_time,personal_identifiers, high
+yes,m,29,college,full_time,personal_identifiers, high
+yes,w,47,undergraduate,full_time,personal_identifiers, low
+yes,w,39,undergraduate,full_time,personal_identifiers, low
+yes,m,30,undergraduate,full_time,personal_identifiers, low
+yes,w,45,college,not_searching,personal_identifiers, high
+yes,m,47,college,part_time,personal_identifiers, low
+yes,m,29,undergraduate,full_time,personal_identifiers, high
+yes,m,35,undergraduate,full_time,personal_identifiers, high
+yes,w,34,undergraduate,not_searching,personal_identifiers, high
+yes,m,35,high_school,full_time,personal_identifiers, high
+yes,w,24,college,full_time,personal_identifiers, high
+yes,w,26,graduate,full_time,personal_identifiers, low
+yes,m,31,undergraduate,full_time,personal_identifiers, high
+yes,m,42,college,full_time,personal_identifiers, low
+yes,m,35,college,not_searching,personal_identifiers, high
+yes,m,48,college,full_time,personal_identifiers, low
+yes,w,34,college,part_time,personal_identifiers, high
+yes,m,51,graduate,part_time,personal_identifiers, high
+yes,w,34,undergraduate,full_time,personal_identifiers, high
+yes,w,30,college,part_time,personal_identifiers, low
+yes,w,27,graduate,full_time,personal_identifiers, high
+yes,w,72,undergraduate,full_time,personal_identifiers, high
+yes,w,31,graduate,full_time,personal_identifiers, low
+yes,w,46,college,full_time,personal_identifiers, high
+yes,m,37,high_school,part_time,personal_identifiers, high
+yes,m,33,college,full_time,personal_identifiers, high
+yes,m,42,undergraduate,full_time,personal_identifiers, high
+yes,w,30,undergraduate,full_time,personal_identifiers, high
+yes,m,46,college,part_time,personal_identifiers, low
+yes,m,27,college,part_time,personal_identifiers, high
+yes,m,30,graduate,full_time,personal_identifiers, low
+yes,w,43,college,part_time,personal_identifiers, low
+yes,w,43,undergraduate,searching,personal_identifiers, high
+yes,m,30,college,full_time,personal_identifiers, low
+yes,m,37,graduate,full_time,personal_identifiers, low
+yes,w,43,college,full_time,personal_identifiers, low
+yes,w,44,college,part_time,personal_identifiers, high
+yes,m,28,college,full_time,personal_identifiers, low
+yes,w,37,undergraduate,full_time,personal_identifiers, low
+yes,m,66,high_school,full_time,personal_identifiers, low
+yes,m,30,graduate,full_time,personal_identifiers, low
+yes,w,38,undergraduate,full_time,personal_identifiers, low
+yes,m,41,college,full_time,personal_identifiers, low
+yes,m,28,college,full_time,personal_identifiers, low
+yes,m,30,undergraduate,student,personal_identifiers, high
+yes,m,26,undergraduate,full_time,personal_identifiers, high
+yes,w,56,undergraduate,full_time,personal_identifiers, low
+yes,w,58,undergraduate,full_time,personal_identifiers, high
+yes,m,37,undergraduate,full_time,personal_identifiers, low
+yes,w,48,undergraduate,full_time,personal_identifiers, high
+yes,m,45,graduate,full_time,personal_identifiers, high
+yes,w,29,undergraduate,full_time,personal_identifiers, low
+yes,w,32,undergraduate,full_time,personal_identifiers, low
+yes,m,33,undergraduate,full_time,personal_identifiers, high
+yes,t,29,undergraduate,student,personal_identifiers, low
+yes,m,41,college,part_time,personal_identifiers, low
+yes,w,41,graduate,full_time,personal_identifiers, low
+yes,m,35,high_school,full_time,personal_identifiers, low
+yes,w,29,undergraduate,full_time,personal_identifiers, low
+yes,m,54,primary_school,full_time,personal_identifiers, high
+yes,w,27,college,full_time,personal_identifiers, low
+yes,m,61,college,full_time,personal_identifiers, low
+yes,m,49,high_school,full_time,personal_identifiers, high
+yes,m,25,primary_school,searching,personal_identifiers, low
+yes,w,43,undergraduate,part_time,personal_identifiers, low
+yes,w,55,undergraduate,full_time,personal_identifiers, low
+yes,w,44,college,not_searching,personal_identifiers, high
+yes,m,35,undergraduate,full_time,personal_identifiers, low
+yes,m,40,college,full_time,personal_identifiers, high
+yes,m,25,undergraduate,full_time,personal_identifiers, high
+yes,w,66,undergraduate,full_time,personal_identifiers, high
+yes,m,52,college,full_time,personal_identifiers, low
+yes,m,31,undergraduate,full_time,personal_identifiers, low
+yes,w,31,college,full_time,personal_identifiers, high
+yes,m,42,high_school,full_time,personal_identifiers, high
+yes,w,28,high_school,part_time,personal_identifiers, high
+yes,m,24,graduate,part_time,personal_identifiers, low
+yes,w,53,undergraduate,full_time,personal_identifiers, low
+yes,w,34,college,full_time,personal_identifiers, low
+yes,m,29,undergraduate,full_time,personal_identifiers, low
+yes,w,31,college,full_time,personal_identifiers, low
+yes,m,37,high_school,full_time,personal_identifiers, high
+yes,m,42,undergraduate,full_time,personal_identifiers, high
+yes,m,65,high_school,full_time,personal_identifiers, low
+yes,m,23,high_school,full_time,personal_identifiers, low
+yes,w,29,undergraduate,not_searching,personal_identifiers, low
+yes,w,31,undergraduate,full_time,personal_identifiers, low
+yes,w,55,high_school,searching,personal_identifiers, high
+yes,m,33,college,searching,personal_identifiers, low
+yes,w,25,undergraduate,part_time,personal_identifiers, low
+yes,m,63,undergraduate,disabled_or_retired,personal_identifiers, low
+yes,m,43,undergraduate,full_time,personal_identifiers, high
+yes,w,37,college,not_searching,personal_identifiers, high
+yes,m,32,college,full_time,personal_identifiers, low
+yes,m,24,high_school,full_time,personal_identifiers, high
+yes,m,25,college,full_time,personal_identifiers, low
+yes,m,36,undergraduate,full_time,personal_identifiers, low
+yes,m,29,undergraduate,full_time,personal_identifiers, high
+yes,m,59,college,full_time,personal_identifiers, low
+yes,m,41,college,full_time,personal_identifiers, high
+yes,w,60,high_school,full_time,personal_identifiers, high
+yes,m,32,undergraduate,full_time,personal_identifiers, low
+yes,w,37,high_school,not_searching,personal_identifiers, high
+yes,w,35,college,not_searching,personal_identifiers, low
+yes,m,39,undergraduate,full_time,personal_identifiers, low
+yes,w,33,graduate,full_time,personal_identifiers, low
+yes,m,38,high_school,full_time,personal_identifiers, low
+yes,m,40,college,full_time,personal_identifiers, low
+yes,m,23,college,full_time,personal_identifiers, low
+yes,w,52,graduate,full_time,personal_identifiers, low
+yes,m,27,undergraduate,full_time,personal_identifiers, low
+yes,m,30,high_school,full_time,personal_identifiers, low
+yes,m,47,high_school,full_time,personal_identifiers, high
+yes,m,57,college,full_time,personal_identifiers, high
+yes,w,50,college,full_time,personal_identifiers, low
+yes,m,25,high_school,full_time,personal_identifiers, high
+yes,w,50,college,part_time,personal_identifiers, high
+yes,w,29,undergraduate,full_time,personal_identifiers, low
+yes,m,25,undergraduate,full_time,personal_identifiers, high
+yes,w,42,high_school,full_time,personal_identifiers, high
+yes,m,53,high_school,full_time,personal_identifiers, high
+yes,w,23,undergraduate,student,personal_identifiers, high
+yes,m,33,college,full_time,personal_identifiers, low
+yes,m,31,college,part_time,personal_identifiers, high
+yes,w,54,college,full_time,personal_identifiers, low
+yes,w,31,undergraduate,full_time,personal_identifiers, high
+yes,w,27,college,full_time,personal_identifiers, low
+yes,m,51,undergraduate,full_time,personal_identifiers, low
+yes,m,30,college,full_time,personal_identifiers, high
+yes,w,35,undergraduate,full_time,personal_identifiers, low
+yes,w,33,graduate,part_time,personal_identifiers, high
+yes,m,39,college,disabled_or_retired,personal_identifiers, high
+yes,m,39,high_school,full_time,personal_identifiers, low
+yes,w,37,undergraduate,part_time,personal_identifiers, low
+yes,w,28,high_school,not_searching,personal_identifiers, high
+yes,w,59,college,part_time,personal_identifiers, high
+yes,m,24,undergraduate,full_time,personal_identifiers, high
+yes,m,35,undergraduate,full_time,personal_identifiers, low
+yes,m,38,high_school,full_time,personal_identifiers, low
+yes,m,33,college,full_time,personal_identifiers, low
+yes,m,30,college,full_time,personal_identifiers, low
+yes,m,45,college,full_time,personal_identifiers, high
+yes,w,33,undergraduate,not_searching,personal_identifiers, high
+yes,w,32,high_school,full_time,personal_identifiers, high
+yes,w,42,undergraduate,full_time,personal_identifiers, high
+yes,w,32,college,full_time,personal_identifiers, low
+yes,m,43,high_school,full_time,personal_identifiers, low
+yes,w,23,college,searching,personal_identifiers, low
+yes,w,59,college,full_time,personal_identifiers, high
+yes,w,27,undergraduate,full_time,personal_identifiers, high
+yes,m,23,college,student,personal_identifiers, low
+yes,m,54,high_school,full_time,personal_identifiers, low
+yes,m,36,undergraduate,full_time,personal_identifiers, low
+yes,m,30,high_school,full_time,personal_identifiers, low
+yes,m,29,undergraduate,full_time,personal_identifiers, high
+yes,w,28,undergraduate,full_time,personal_identifiers, high
+yes,m,33,college,disabled_or_retired,personal_identifiers, low
+yes,m,31,college,full_time,personal_identifiers, high
+yes,m,25,college,part_time,personal_identifiers, high
+yes,m,33,undergraduate,full_time,personal_identifiers, low
+yes,w,37,high_school,full_time,personal_identifiers, low
+yes,w,50,undergraduate,full_time,personal_identifiers, low
+yes,w,24,college,full_time,personal_identifiers, low
+yes,m,29,undergraduate,full_time,personal_identifiers, low
+yes,w,35,undergraduate,full_time,personal_identifiers, low
+yes,w,32,college,full_time,personal_identifiers, low
+yes,m,24,undergraduate,full_time,personal_identifiers, high
+yes,m,29,high_school,full_time,personal_identifiers, low
+yes,w,36,college,full_time,personal_identifiers, low
+yes,w,27,college,part_time,personal_identifiers, high
+yes,w,25,college,part_time,personal_identifiers, low
+yes,m,54,undergraduate,full_time,personal_identifiers, low
+yes,m,35,graduate,part_time,personal_identifiers, low
+yes,w,61,college,full_time,personal_identifiers, high
+yes,w,41,graduate,full_time,personal_identifiers, high
+yes,m,34,high_school,part_time,personal_identifiers, low
+yes,w,33,undergraduate,full_time,personal_identifiers, high
+yes,m,35,college,full_time,personal_identifiers, low
+yes,w,45,college,part_time,personal_identifiers, low
+yes,m,41,undergraduate,full_time,personal_identifiers, low
+yes,w,45,undergraduate,full_time,personal_identifiers, high
+yes,m,32,high_school,full_time,personal_identifiers, low
+yes,w,23,undergraduate,full_time,personal_identifiers, high
+yes,w,31,undergraduate,full_time,personal_identifiers, low
+yes,w,33,graduate,searching,personal_identifiers, high
+yes,m,25,undergraduate,full_time,personal_identifiers, low
+yes,m,43,college,full_time,personal_identifiers, low
+yes,m,34,undergraduate,full_time,personal_identifiers, low
+yes,m,41,college,full_time,personal_identifiers, low
+yes,w,26,undergraduate,full_time,personal_identifiers, low
+yes,m,27,high_school,full_time,personal_identifiers, low
+yes,w,53,undergraduate,full_time,personal_identifiers, low
+yes,m,35,high_school,searching,personal_identifiers, low
+yes,w,32,high_school,full_time,personal_identifiers, high
+yes,m,38,college,full_time,personal_identifiers, low
+yes,w,38,college,part_time,personal_identifiers, high
+yes,w,46,primary_school,disabled_or_retired,personal_identifiers, low
+yes,m,36,undergraduate,full_time,personal_identifiers, low
+yes,w,51,college,full_time,personal_identifiers, high
+yes,m,56,graduate,full_time,personal_identifiers, high
+yes,m,32,undergraduate,full_time,personal_identifiers, high
+yes,m,35,graduate,full_time,personal_identifiers, low
+yes,m,29,undergraduate,full_time,personal_identifiers, low
+yes,m,35,college,full_time,personal_identifiers, low
+yes,w,18,undergraduate,part_time,personal_identifiers, low
+yes,m,30,undergraduate,full_time,personal_identifiers, low
+yes,w,32,high_school,full_time,personal_identifiers, high
+yes,m,68,high_school,not_searching,personal_identifiers, low
+yes,m,35,undergraduate,full_time,personal_identifiers, low
+yes,m,29,graduate,full_time,personal_identifiers, low
+yes,m,43,undergraduate,full_time,personal_identifiers, low
+yes,m,51,college,not_searching,personal_identifiers, low
+yes,m,27,college,full_time,personal_identifiers, low
+yes,w,31,undergraduate,full_time,personal_identifiers, high
+yes,m,52,high_school,full_time,personal_identifiers, low
+yes,w,59,undergraduate,full_time,personal_identifiers, high
+yes,m,63,undergraduate,disabled_or_retired,personal_identifiers, high
+yes,m,36,college,full_time,personal_identifiers, low
+yes,w,30,undergraduate,full_time,personal_identifiers, high
+yes,w,31,college,full_time,personal_identifiers, low
+yes,m,32,college,full_time,personal_identifiers, low
+yes,w,42,undergraduate,part_time,personal_identifiers, high
+yes,w,34,undergraduate,full_time,personal_identifiers, low
