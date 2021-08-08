@@ -15,10 +15,10 @@ import javax.swing.JFrame
 import javax.swing.SwingUtilities
 
 fun main(args: Array<String>) {
-    DecisionTreeDemo.process()
+    Main.process()
 }
 
-object DecisionTreeDemo {
+object Main {
     private const val CATEGORICAL_DATA_FILENAME = "data_categorical.arff"
     private const val CROSS_VALIDATION_FOLDS = 10
 
@@ -46,7 +46,7 @@ object DecisionTreeDemo {
         val eval = Evaluation(dataSet)
         eval.crossValidateModel(classifier, dataSet, CROSS_VALIDATION_FOLDS, Random(1))
         println(classifier::class.java.simpleName)
-        println(eval.toSummaryString())
+        println(eval.toSummaryString(true))
         return eval
     }
 
@@ -116,6 +116,8 @@ object DecisionTreeDemo {
     }
 
     fun process() {
+
+        //evaluate(J48())
 
         ClassifierEvaluation().compareAll()
 
