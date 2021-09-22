@@ -16,6 +16,7 @@ import weka.classifiers.rules.*
 import weka.classifiers.trees.*
 import weka.core.SelectedTag
 
+@Suppress("unused")
 enum class Classifier(val title: String, val description: String) {
     BAYES_NETWORK_K2(
         "BN: K2",
@@ -23,7 +24,7 @@ enum class Classifier(val title: String, val description: String) {
     ) {
         override val model get() = BayesNet()
     },
-/*    BAYES_NETWORK_GENETIC(
+    BAYES_NETWORK_GENETIC(
         "BN: Genetic",
         "Bayes Network using genetic search learning algorithm: allow a population of Bayes network " +
                 "structures to mutate and apply cross over to get offspring. The best network structure found " +
@@ -36,7 +37,7 @@ enum class Classifier(val title: String, val description: String) {
         "Bayes Network using the general purpose search method of simulated annealing as learning algorithm."
     ) {
         override val model get() = BayesNet().apply { searchAlgorithm = SimulatedAnnealing() }
-    },*/
+    },
     BAYES_NETWORK_HILL_CLIMBER(
         "BN: Hill Climb",
         "Bayes Network using a hill climbing algorithm for adding, deleting and reversing arcs. The " +
@@ -70,7 +71,7 @@ enum class Classifier(val title: String, val description: String) {
     ) {
         override val model get() = IBk().apply { crossValidate = true }
     },
-    J48("C4.5", "C4.5 decision tree induction algorithm.") {
+    C4_5("C4.5", "C4.5 decision tree induction algorithm.") {
         override val model get() = J48()
     },
     RIPPER(
@@ -98,12 +99,12 @@ enum class Classifier(val title: String, val description: String) {
     LOGISTIC("Log. Regression", "Multinomial logistic regression model with a ridge estimator.") {
         override val model get() = Logistic()
     },
-/*    MULTILAYER_PERCEPTRON(
+    MULTILAYER_PERCEPTRON(
         "MLP",
         "Multilayer Perceptron: uses backpropagation to learn. Built automatic by a heuristic."
     ) {
         override val model get() = MultilayerPerceptron()
-    },*/
+    },
     NAIVE_BAYES(
         "Naive Bayes",
         "Naive Bayes classifier using estimator classes. Numeric estimator precision values are chosen " +

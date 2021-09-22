@@ -14,10 +14,13 @@ private const val FRACTION_DIGITS = 4
 
 class ClassifierEvaluation {
 
+    private val classifierSelection =
+        listOf(Classifier.KNN_AUTO_SELECT_K, Classifier.C4_5, Classifier.RANDOM_FOREST, Classifier.NAIVE_BAYES)
+
     private val formatter = NumberFormat.getNumberInstance(Locale.ENGLISH).apply {
         isGroupingUsed = false
-        minimumFractionDigits = 4
-        maximumFractionDigits = 4
+        minimumFractionDigits = FRACTION_DIGITS
+        maximumFractionDigits = FRACTION_DIGITS
     }
     private val dataset = initDataSet()
 
@@ -36,7 +39,7 @@ class ClassifierEvaluation {
         val text = StringBuilder("\n${"%-${CLASSIFIER_SPACE}s".format("CLASSIFIER")} | DESCRIPTION\n")
         repeat(CLASSIFIER_SPACE) { text.append("-") }
         text.append("-+-----------------------------------------------------------------------------------------------")
-        Classifier.values().forEach {
+        classifierSelection.forEach {
             text.append("\n${"%-${CLASSIFIER_SPACE}s".format(it.title)} | ${it.description}")
         }
         println(text)
@@ -74,7 +77,7 @@ class ClassifierEvaluation {
     }
 
     private fun printEvaluationMatrixEntries() = MetricScores().also { scores ->
-        Classifier.values().forEach { classifier ->
+        classifierSelection.forEach { classifier ->
             print("%-${CLASSIFIER_SPACE}s".format(classifier.title))
             try {
                 val evaluation = Evaluation(dataset)
