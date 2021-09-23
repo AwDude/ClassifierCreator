@@ -14,7 +14,7 @@ private const val FRACTION_DIGITS = 4
 
 class ClassifierEvaluation {
 
-    private val classifierSelection =
+    private val classifierSelection = //Classifier.values()
         listOf(Classifier.KNN_AUTO_SELECT_K, Classifier.C4_5, Classifier.RANDOM_FOREST, Classifier.NAIVE_BAYES)
 
     private val formatter = NumberFormat.getNumberInstance(Locale.ENGLISH).apply {

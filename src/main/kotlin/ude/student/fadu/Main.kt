@@ -2,6 +2,7 @@ package ude.student.fadu
 
 import weka.classifiers.Classifier
 import weka.classifiers.Evaluation
+import weka.classifiers.bayes.NaiveBayes
 import weka.classifiers.trees.J48
 import weka.core.DenseInstance
 import weka.core.Drawable
@@ -14,7 +15,7 @@ import java.util.*
 import javax.swing.JFrame
 import javax.swing.SwingUtilities
 
-fun main(args: Array<String>) {
+fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
     Main.process()
 }
 
@@ -45,8 +46,7 @@ object Main {
         classifier.buildClassifier(dataSet)
         val eval = Evaluation(dataSet)
         eval.crossValidateModel(classifier, dataSet, CROSS_VALIDATION_FOLDS, Random(1))
-        println(classifier::class.java.simpleName)
-        println(eval.toSummaryString(true))
+
         return eval
     }
 
@@ -111,15 +111,44 @@ object Main {
         }
     }
 
-    private fun evaluateAllClassifiers() {
-        val classifiers = listOf(J48())
+    private fun printNaiveBayesProbabilities() {
+        val dataSet = initDataSet()
+        val classifier = NaiveBayes()
+        classifier.buildClassifier(dataSet)
+
+        val eval = Evaluation(dataSet)
+        eval.crossValidateModel(classifier, dataSet, CROSS_VALIDATION_FOLDS, Random(1))
+
+        val probabilities = classifier.conditionalEstimators
+
+        val numAttrs = dataSet.numAttributes() - 1
+
+        (0..1).forEach { classIndex ->
+            val classLabel = dataSet.classAttribute().value(classIndex) + "_severity"
+            val classProb = classifier.classEstimator.getProbability(classIndex.toDouble())
+            println("[Class]: $classLabel")
+            println("P($classLabel) = $classProb")
+
+            (0 until numAttrs).forEach { attrIndex ->
+                val attr = dataSet.attribute(attrIndex)
+                println("   [Attribute]: ${attr.name()}")
+                attr.enumerateValues()?.iterator()?.withIndex()?.forEach { (index, attrVal) ->
+                    val attrProb = probabilities[attrIndex][classIndex].getProbability(index.toDouble())
+                    println("      P($attrVal|$classLabel) = $attrProb")
+                }
+            }
+            println()
+        }
+
     }
 
     fun process() {
 
+        printNaiveBayesProbabilities()
+
         //evaluate(J48())
 
-        ClassifierEvaluation().compareAll()
+        //ClassifierEvaluation().compareAll()
 
         // testPrediction()
 
