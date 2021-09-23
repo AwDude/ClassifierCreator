@@ -1,9 +1,16 @@
-package ude.student.fadu
+package ude.student.fadu.evaluation
 
 import weka.classifiers.Evaluation
+import weka.classifiers.bayes.NaiveBayes
+import weka.core.Drawable
 import weka.core.converters.ConverterUtils
+import weka.estimators.NormalEstimator
+import weka.gui.treevisualizer.PlaceNode2
+import weka.gui.treevisualizer.TreeVisualizer
 import java.text.NumberFormat
 import java.util.*
+import javax.swing.JFrame
+import javax.swing.SwingUtilities
 import kotlin.system.measureTimeMillis
 
 private const val METRIC_SPACE = 9
@@ -23,6 +30,20 @@ class ClassifierEvaluation {
         maximumFractionDigits = FRACTION_DIGITS
     }
     private val dataset = initDataSet()
+
+    fun <T : Drawable> visualize(classifier: T) = SwingUtilities.invokeLater {
+        try {
+            val visualizeTree = TreeVisualizer(null, classifier.graph(), PlaceNode2())
+            val jFrame = JFrame("Weka J48 Klassisfikator: Entscheidungsbaum")
+            jFrame.setSize(600, 500)
+            jFrame.defaultCloseOperation = JFrame.EXIT_ON_CLOSE
+            jFrame.contentPane.add(visualizeTree)
+            jFrame.isVisible = true
+            visualizeTree.fitToScreen()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
 
     fun compareAll() {
         println("\n===== Metric comparison of cross validated classifiers =====")
@@ -130,4 +151,42 @@ class ClassifierEvaluation {
 
     private fun format(number: Double) =
         if (number % 1.0 == 0.0) number.toInt().toString() else formatter.format(number)
+
+    fun printNaiveBayesProbabilities() {
+        val dataSet = initDataSet()
+        val classifier = NaiveBayes()
+        classifier.buildClassifier(dataSet)
+
+        val eval = Evaluation(dataSet)
+        eval.crossValidateModel(classifier, dataSet, FOLDS, Random(1))
+
+        val probabilities = classifier.conditionalEstimators
+
+        val numAttrs = dataSet.numAttributes() - 1
+
+        var count = 2
+
+        (0..1).forEach { classIndex ->
+            val classLabel = dataSet.classAttribute().value(classIndex) + "_severity"
+            val classProb = classifier.classEstimator.getProbability(classIndex.toDouble())
+            println("[Class]: $classLabel")
+            println("P($classLabel) = ${formatter.format(classProb)}")
+
+            (0 until numAttrs).forEach { attrIndex ->
+                val attr = dataSet.attribute(attrIndex)
+                println("   [Attribute]: ${attr.name()}")
+                attr.enumerateValues()?.iterator()?.withIndex()?.forEach { (index, attrVal) ->
+                    val attrProb = probabilities[attrIndex][classIndex].getProbability(index.toDouble())
+                    println("      P($attrVal|$classLabel) = ${formatter.format(attrProb)}")
+                    count++
+                } ?: run {
+                    val estimator = probabilities[attrIndex][classIndex] as NormalEstimator
+                    println("mean: ${estimator.mean}, precision: ${estimator.precision}, stdDev: ${estimator.stdDev}, sumOfWeights: ${estimator.sumOfWeights}")
+                }
+            }
+            println()
+        }
+
+        println("count: $count")
+    }
 }

@@ -1,4 +1,4 @@
-package ude.student.fadu
+package ude.student.fadu.evaluation
 
 class MetricScore(val name: String, val score: Double) : Comparable<MetricScore> {
 

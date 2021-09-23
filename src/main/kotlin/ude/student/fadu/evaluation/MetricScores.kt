@@ -1,4 +1,4 @@
-package ude.student.fadu
+package ude.student.fadu.evaluation
 
 class MetricScores {
     private var isSorted = false
