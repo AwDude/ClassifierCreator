@@ -1,8 +1,12 @@
 package ude.student.fadu.evaluation
 
+import weka.classifiers.Classifier
 import weka.classifiers.Evaluation
 import weka.classifiers.bayes.NaiveBayes
+import weka.classifiers.trees.J48
 import weka.core.Drawable
+import weka.core.Instances
+import weka.core.SerializationHelper
 import weka.core.converters.ConverterUtils
 import weka.estimators.NormalEstimator
 import weka.gui.treevisualizer.PlaceNode2
@@ -23,7 +27,7 @@ private const val TABLE_SPLITS = 3
 class ClassifierEvaluation {
 
     private val classifierSelection = //Classifier.values()
-        listOf(Classifier.KNN_AUTO_SELECT_K, Classifier.C4_5, Classifier.RANDOM_FOREST, Classifier.NAIVE_BAYES)
+        listOf(Classifiers.KNN_AUTO_SELECT_K, Classifiers.C4_5, Classifiers.RANDOM_FOREST, Classifiers.NAIVE_BAYES)
 
     private val formatter = NumberFormat.getNumberInstance(Locale.ENGLISH).apply {
         isGroupingUsed = false
@@ -31,6 +35,24 @@ class ClassifierEvaluation {
         maximumFractionDigits = FRACTION_DIGITS
     }
     private val dataset = initDataSet()
+
+    fun showDecisionTreeC45() {
+        val classifier = J48()
+        train(classifier)
+        visualize(classifier)
+    }
+
+    fun trainAndExportModel(classifier: Classifier, fileName: String) {
+        train(classifier)
+        SerializationHelper.write("$fileName.model", classifier)
+    }
+
+    fun exportHeader() {
+        val header = Instances(dataset, 0)
+        SerializationHelper.write("dataset.header", header)
+    }
+
+    fun train(classifier: Classifier) = classifier.apply { buildClassifier(dataset) }
 
     fun <T : Drawable> visualize(classifier: T) = SwingUtilities.invokeLater {
         try {
@@ -72,7 +94,7 @@ class ClassifierEvaluation {
     }
 
     private fun printEvaluation() {
-        val metrics = Metric.values()
+        val metrics = Metrics.values()
         val chunkSize = (metrics.size / TABLE_SPLITS) + 1
         val chunks = metrics.asIterable().chunked(chunkSize)
         val scores = MetricScores()
@@ -85,7 +107,7 @@ class ClassifierEvaluation {
         printMetrics(scores)
     }
 
-    private fun printEvaluationMatrixHeader(metrics: List<Metric>) {
+    private fun printEvaluationMatrixHeader(metrics: List<Metrics>) {
         val text = StringBuilder("\n")
         text.append("%-${CLASSIFIER_SPACE}s".format("CLASSIFIER"))
         metrics.forEach {
@@ -95,7 +117,7 @@ class ClassifierEvaluation {
         println(text)
     }
 
-    private fun printEvaluationMatrixLine(metrics: List<Metric>) {
+    private fun printEvaluationMatrixLine(metrics: List<Metrics>) {
         val text = StringBuilder("-")
         repeat(CLASSIFIER_SPACE) { text.append("-") }
         repeat(metrics.count()) {
@@ -105,7 +127,7 @@ class ClassifierEvaluation {
         println(text)
     }
 
-    private fun printEvaluationMatrixEntries(metrics: List<Metric>, scores: MetricScores) {
+    private fun printEvaluationMatrixEntries(metrics: List<Metrics>, scores: MetricScores) {
         classifierSelection.forEach { classifier ->
             print("%-${CLASSIFIER_SPACE}s".format(classifier.title))
             try {
@@ -144,7 +166,7 @@ class ClassifierEvaluation {
         }
         text.append("-+--------------------------------------------------------------------------\n")
 
-        Metric.values().forEach { metric ->
+        Metrics.values().forEach { metric ->
             text.append("%-${METRIC_SPACE}s".format(metric.title))
             repeat(topCount) { topIndex ->
                 text.append(" | ")

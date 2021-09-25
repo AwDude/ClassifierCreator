@@ -4,7 +4,7 @@ import weka.classifiers.Evaluation
 
 private const val POSITIVE_CLASS = 0
 
-enum class Metric(val title: String, val description: String, val isBiggerBetter: Boolean = true) {
+enum class Metrics(val title: String, val description: String, val isBiggerBetter: Boolean = true) {
     CLASSIFIED_CORRECT("Correct", "Correctly Classified Instances.") {
         override fun retrieveFrom(evaluation: Evaluation) = evaluation.correct()
     },
@@ -14,13 +14,13 @@ enum class Metric(val title: String, val description: String, val isBiggerBetter
     UNCLASSIFIED("Unclass.", "Unclassified Instances.", false) {
         override fun retrieveFrom(evaluation: Evaluation) = evaluation.unclassified()
     },
-    TP("TP", "Incorrectly Classified Instances.", false) {
+    TP("TP", "Incorrectly Classified Instances.") {
         override fun retrieveFrom(evaluation: Evaluation) = evaluation.numTruePositives(POSITIVE_CLASS)
     },
     FP("FP", "Incorrectly Classified Instances.", false) {
         override fun retrieveFrom(evaluation: Evaluation) = evaluation.numFalsePositives(POSITIVE_CLASS)
     },
-    TN("TN", "Incorrectly Classified Instances.", false) {
+    TN("TN", "Incorrectly Classified Instances.") {
         override fun retrieveFrom(evaluation: Evaluation) = evaluation.numTrueNegatives(POSITIVE_CLASS)
     },
     FN("FN", "Incorrectly Classified Instances.", false) {

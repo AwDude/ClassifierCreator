@@ -17,7 +17,7 @@ import weka.classifiers.trees.*
 import weka.core.SelectedTag
 
 @Suppress("unused")
-enum class Classifier(val title: String, val description: String) {
+enum class Classifiers(val title: String, val description: String) {
     BAYES_NETWORK_K2(
         "BN: K2",
         "Bayes Network using K2 learning algorithm: hill climbing restricted by an order on the variables."

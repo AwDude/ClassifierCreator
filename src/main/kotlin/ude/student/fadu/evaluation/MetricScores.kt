@@ -2,9 +2,9 @@ package ude.student.fadu.evaluation
 
 class MetricScores {
     private var isSorted = false
-    private val metricMap = linkedMapOf<Metric, MutableList<MetricScore>>()
+    private val metricMap = linkedMapOf<Metrics, MutableList<MetricScore>>()
 
-    fun add(metric: Metric, name: String, score: Double) {
+    fun add(metric: Metrics, name: String, score: Double) {
         isSorted = false
         val scores = metricMap[metric] ?: mutableListOf<MetricScore>().also { metricMap[metric] = it }
         scores.add(MetricScore(name, score))
@@ -14,7 +14,7 @@ class MetricScores {
         if (metric.isBiggerBetter) scoreList.sortDescending() else scoreList.sort()
     }.run { isSorted = true }
 
-    fun getTop(metric: Metric, rank: Int = 0): MetricScore? {
+    fun getTop(metric: Metrics, rank: Int = 0): MetricScore? {
         if (!isSorted) sort()
         return metricMap[metric]?.elementAtOrNull(rank)
     }
