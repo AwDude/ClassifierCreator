@@ -13,11 +13,12 @@ import javax.swing.JFrame
 import javax.swing.SwingUtilities
 import kotlin.system.measureTimeMillis
 
-private const val METRIC_SPACE = 9
+private const val METRIC_SPACE = 12
 private const val CLASSIFIER_SPACE = 16
 private const val FOLDS = 10
 private const val DATASET_FILE_PATH = "data_categorical.arff"
 private const val FRACTION_DIGITS = 4
+private const val TABLE_SPLITS = 3
 
 class ClassifierEvaluation {
 
@@ -71,33 +72,40 @@ class ClassifierEvaluation {
     }
 
     private fun printEvaluation() {
-        printEvaluationMatrixHeader()
-        printEvaluationMatrixLine()
-        val scores = printEvaluationMatrixEntries()
+        val metrics = Metric.values()
+        val chunkSize = (metrics.size / TABLE_SPLITS) + 1
+        val chunks = metrics.asIterable().chunked(chunkSize)
+        val scores = MetricScores()
+
+        chunks.forEach { chunkOfMetrics ->
+            printEvaluationMatrixHeader(chunkOfMetrics)
+            printEvaluationMatrixLine(chunkOfMetrics)
+            printEvaluationMatrixEntries(chunkOfMetrics, scores)
+        }
         printMetrics(scores)
     }
 
-    private fun printEvaluationMatrixHeader() {
+    private fun printEvaluationMatrixHeader(metrics: List<Metric>) {
         val text = StringBuilder("\n")
         text.append("%-${CLASSIFIER_SPACE}s".format("CLASSIFIER"))
-        Metric.values().forEach {
+        metrics.forEach {
             text.append(" | ${"%${METRIC_SPACE}s".format(it.title)}")
         }
-        text.append(" | ${"%${METRIC_SPACE}s".format("Seconds")}")
+        //text.append(" | ${"%${METRIC_SPACE}s".format("Seconds")}")
         println(text)
     }
 
-    private fun printEvaluationMatrixLine() {
+    private fun printEvaluationMatrixLine(metrics: List<Metric>) {
         val text = StringBuilder("-")
         repeat(CLASSIFIER_SPACE) { text.append("-") }
-        repeat(Metric.values().count() + 1) {
+        repeat(metrics.count()) {
             text.append("+--")
             repeat(METRIC_SPACE) { text.append("-") }
         }
         println(text)
     }
 
-    private fun printEvaluationMatrixEntries() = MetricScores().also { scores ->
+    private fun printEvaluationMatrixEntries(metrics: List<Metric>, scores: MetricScores) {
         classifierSelection.forEach { classifier ->
             print("%-${CLASSIFIER_SPACE}s".format(classifier.title))
             try {
@@ -106,13 +114,13 @@ class ClassifierEvaluation {
                     evaluation.crossValidateModel(classifier.model, dataset, FOLDS, Random(1))
                 } / 1000.0
 
-                Metric.values().forEach { metric ->
+                metrics.forEach { metric ->
                     val result = metric.retrieveFrom(evaluation)
                     scores.add(metric, classifier.title, result)
                     val formatted = format(result)
                     print(" | ${"%${METRIC_SPACE}s".format(formatted)}")
                 }
-                print(" | ${"%${METRIC_SPACE}s".format(format(time))}")
+                //print(" | ${"%${METRIC_SPACE}s".format(format(time))}")
             } catch (e: Exception) {
                 print(" | ERROR")
             }
