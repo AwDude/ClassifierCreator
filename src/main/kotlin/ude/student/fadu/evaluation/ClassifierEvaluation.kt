@@ -22,12 +22,11 @@ private const val CLASSIFIER_SPACE = 16
 private const val FOLDS = 10
 private const val DATASET_FILE_PATH = "data_categorical.arff"
 private const val FRACTION_DIGITS = 4
-private const val TABLE_SPLITS = 3
+private const val TABLE_SPLITS = 2
 
 class ClassifierEvaluation {
 
-    private val classifierSelection = //Classifier.values()
-        listOf(Classifiers.KNN_AUTO_SELECT_K, Classifiers.C4_5, Classifiers.RANDOM_FOREST, Classifiers.NAIVE_BAYES)
+    private lateinit var classifierSelection: List<Classifiers>
 
     private val formatter = NumberFormat.getNumberInstance(Locale.ENGLISH).apply {
         isGroupingUsed = false
@@ -68,7 +67,8 @@ class ClassifierEvaluation {
         }
     }
 
-    fun compareAll() {
+    fun compareClassifiers(classifiers: List<Classifiers>) {
+        classifierSelection = classifiers
         println("\n===== Metric comparison of cross validated classifiers =====")
         printClassifierDescriptions()
         printGeneralInfo()
@@ -211,7 +211,8 @@ class ClassifierEvaluation {
                     count++
                 } ?: run {
                     val estimator = probabilities[attrIndex][classIndex] as NormalEstimator
-                    println("mean: ${estimator.mean}, precision: ${estimator.precision}, stdDev: ${estimator.stdDev}, sumOfWeights: ${estimator.sumOfWeights}")
+                    println("      P( * |$classLabel) = ${estimator.mean}")
+                    println("      * Mean conditional probability over all class determined by applying intervals of size ${estimator.precision} on the numeric values.")
                 }
             }
             println()
