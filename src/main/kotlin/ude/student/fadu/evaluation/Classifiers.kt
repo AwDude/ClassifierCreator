@@ -24,20 +24,20 @@ enum class Classifiers(val title: String, val description: String) {
     ) {
         override val model get() = BayesNet()
     },
-    BAYES_NETWORK_GENETIC(
+/*    BAYES_NETWORK_GENETIC(
         "BN: Genetic",
         "Bayes Network using genetic search learning algorithm: allow a population of Bayes network " +
                 "structures to mutate and apply cross over to get offspring. The best network structure found " +
                 "during the process is returned."
     ) {
         override val model get() = BayesNet().apply { searchAlgorithm = GeneticSearch() }
-    },
-    BAYES_NETWORK_SIMULATED_ANNEALING(
+    },*/
+/*    BAYES_NETWORK_SIMULATED_ANNEALING(
         "BN: Sim Anneal",
         "Bayes Network using the general purpose search method of simulated annealing as learning algorithm."
     ) {
         override val model get() = BayesNet().apply { searchAlgorithm = SimulatedAnnealing() }
-    },
+    },*/
     BAYES_NETWORK_HILL_CLIMBER(
         "BN: Hill Climb",
         "Bayes Network using a hill climbing algorithm for adding, deleting and reversing arcs. The " +
@@ -99,12 +99,12 @@ enum class Classifiers(val title: String, val description: String) {
     LOGISTIC("Log. Regression", "Multinomial logistic regression model with a ridge estimator.") {
         override val model get() = Logistic()
     },
-    MULTILAYER_PERCEPTRON(
+/*    MULTILAYER_PERCEPTRON(
         "MLP",
         "Multilayer Perceptron: uses backpropagation to learn. Built automatic by a heuristic."
     ) {
         override val model get() = MultilayerPerceptron()
-    },
+    },*/
     NAIVE_BAYES(
         "Naive Bayes",
         "Naive Bayes classifier using estimator classes. Numeric estimator precision values are chosen " +

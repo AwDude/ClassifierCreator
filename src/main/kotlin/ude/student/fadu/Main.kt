@@ -15,11 +15,11 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
 
         // trainAndExportModel(NaiveBayes(), "naiveBayes")
 
-        printNaiveBayesProbabilities()
+        // printNaiveBayesProbabilities()
 
-        // compareClassifiers(classifierSelection)
+        compareClassifiers(classifierSelection)
 
-        compareClassifiers(allClassifiers)
+        // compareClassifiers(allClassifiers)
 
     }
 
